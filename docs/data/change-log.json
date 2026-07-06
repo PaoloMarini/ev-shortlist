@@ -1,0 +1,17 @@
+{
+  "entries": [
+    {
+      "date": "2026-07-06",
+      "type": "structure",
+      "summary": "Moved from flat CSV-only tracking toward structured data plus static dashboard.",
+      "details": [
+        "Added sound/audio as the highest-weighted criterion.",
+        "Clarified that high performance is desirable, not a penalty, provided the car has usable comfort modes.",
+        "Added dashboard/control ergonomics as an explicit criterion, including dislike of non-integrated tablet-style screens.",
+        "Added reliable phone integration as a critical criterion.",
+        "Added security/theft resistance after the stolen EV6 experience.",
+        "Kept Tesla excluded while allowing Chinese-brand cars if quality evidence is strong."
+      ]
+    }
+  ]
+}
