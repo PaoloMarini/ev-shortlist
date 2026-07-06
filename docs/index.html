@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EV Shortlist Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Private EV decision dashboard</p>
+      <h1>Next EV shortlist</h1>
+      <p class="lede">A living comparison of candidate EVs against the things that actually matter: sound, performance, comfort, dashboard ergonomics, phone reliability, security and value.</p>
+    </div>
+    <div class="summary-card">
+      <span class="label">Last updated</span>
+      <strong id="last-updated">Loading…</strong>
+      <span class="label">Benchmark</span>
+      <strong id="benchmark">EV6 GT</strong>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Decision weights</h2>
+      <div id="criteria" class="criteria-grid"></div>
+    </section>
+
+    <section class="panel controls-panel">
+      <div>
+        <h2>Vehicles</h2>
+        <p class="muted">Sort by score, status or the red flags that would make the car annoying to live with.</p>
+      </div>
+      <div class="controls">
+        <label>
+          Status
+          <select id="status-filter">
+            <option value="all">All</option>
+            <option value="shortlist">Shortlist</option>
+            <option value="watchlist">Watchlist</option>
+            <option value="research">Research</option>
+            <option value="benchmark">Benchmark</option>
+            <option value="rejected">Rejected</option>
+          </select>
+        </label>
+        <label>
+          Sort
+          <select id="sort-mode">
+            <option value="score">Score</option>
+            <option value="status">Status</option>
+            <option value="make">Make/model</option>
+            <option value="confidence">Evidence confidence</option>
+          </select>
+        </label>
+        <label class="checkbox">
+          <input id="show-unknowns" type="checkbox" checked />
+          Show unknown-heavy vehicles
+        </label>
+      </div>
+    </section>
+
+    <section id="vehicle-grid" class="vehicle-grid" aria-live="polite"></section>
+
+    <section class="panel">
+      <h2>Change log</h2>
+      <div id="change-log" class="change-log"></div>
+    </section>
+  </main>
+
+  <template id="vehicle-card-template">
+    <article class="vehicle-card">
+      <div class="vehicle-header">
+        <div>
+          <span class="status"></span>
+          <h3></h3>
+          <p class="meta"></p>
+        </div>
+        <div class="score-block">
+          <span class="score-label">Score</span>
+          <strong class="score">—</strong>
+        </div>
+      </div>
+      <div class="flag-list"></div>
+      <dl class="score-list"></dl>
+      <ul class="notes"></ul>
+      <p class="confidence"></p>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
