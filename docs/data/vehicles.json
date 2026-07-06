@@ -1,0 +1,372 @@
+{
+  "version": 1,
+  "lastUpdated": "2026-07-06",
+  "benchmark": "kia-ev6-gt",
+  "vehicles": [
+    {
+      "id": "kia-ev6-gt",
+      "make": "Kia",
+      "model": "EV6 GT",
+      "bodyType": "Crossover",
+      "status": "benchmark",
+      "candidate": false,
+      "exclusionReason": "Kia is not a live candidate; kept only as the performance/cost/reference benchmark.",
+      "origin": "South Korea",
+      "estimatedMonthlyCostGbp": 700,
+      "availabilityUk": "on sale / benchmark only",
+      "scores": {
+        "sound": null,
+        "performance": null,
+        "comfort": null,
+        "dashboard_controls": 9,
+        "phone_integration": null,
+        "security": null,
+        "quality": null,
+        "range_charging": null,
+        "value": null,
+        "software_adas": null
+      },
+      "flags": {
+        "tesla": false,
+        "featureSubscription": "unknown",
+        "tabletDashboard": false,
+        "touchOnlyBasicControls": false,
+        "unreliablePhoneIntegration": "unknown",
+        "theftSecurityConcern": "previous vehicle was stolen; use as security benchmark"
+      },
+      "notes": [
+        "Reference vehicle only: compare acceleration, lease economics, integrated dashboard feel and ownership experience.",
+        "Dashboard/display integration was liked and should be used as the positive benchmark."
+      ],
+      "evidenceConfidence": "personal benchmark",
+      "lastChecked": "2026-07-06"
+    },
+    {
+      "id": "volvo-ex30-ultra",
+      "make": "Volvo",
+      "model": "EX30 Ultra",
+      "bodyType": "Compact SUV",
+      "status": "shortlist",
+      "candidate": true,
+      "origin": "China / Sweden brand",
+      "availabilityUk": "verify current UK availability and lead time",
+      "scores": {
+        "sound": null,
+        "performance": null,
+        "comfort": null,
+        "dashboard_controls": null,
+        "phone_integration": null,
+        "security": null,
+        "quality": null,
+        "range_charging": null,
+        "value": null,
+        "software_adas": null
+      },
+      "flags": {
+        "tesla": false,
+        "featureSubscription": "verify",
+        "tabletDashboard": "risk: central-screen-heavy interior",
+        "touchOnlyBasicControls": "verify",
+        "unreliablePhoneIntegration": "verify",
+        "theftSecurityConcern": "verify"
+      },
+      "notes": [
+        "Strong value candidate from previous work, but must be tested hard against controls, screen design, sound and software maturity.",
+        "Chinese production is not an automatic rejection, but quality/support/software evidence must be explicit."
+      ],
+      "evidenceConfidence": "low until refreshed",
+      "lastChecked": "2026-07-06"
+    },
+    {
+      "id": "ford-explorer-ev",
+      "make": "Ford",
+      "model": "Explorer EV",
+      "bodyType": "Mid SUV",
+      "status": "watchlist",
+      "candidate": true,
+      "origin": "US / Europe",
+      "availabilityUk": "verify current UK pricing, trims and lease availability",
+      "scores": {
+        "sound": null,
+        "performance": null,
+        "comfort": null,
+        "dashboard_controls": null,
+        "phone_integration": null,
+        "security": null,
+        "quality": null,
+        "range_charging": null,
+        "value": null,
+        "software_adas": null
+      },
+      "flags": {
+        "tesla": false,
+        "featureSubscription": "verify",
+        "tabletDashboard": "verify",
+        "touchOnlyBasicControls": "verify",
+        "unreliablePhoneIntegration": "verify",
+        "theftSecurityConcern": "verify"
+      },
+      "notes": [
+        "Previously kept on the watchlist pending timing, pricing and allocation confidence.",
+        "Needs a current check against comfort, infotainment, mobile integration and security expectations."
+      ],
+      "evidenceConfidence": "low until refreshed",
+      "lastChecked": "2026-07-06"
+    },
+    {
+      "id": "smart-5-brabus",
+      "make": "Smart",
+      "model": "#5 Brabus",
+      "bodyType": "Compact/Mid SUV",
+      "status": "shortlist",
+      "candidate": true,
+      "origin": "China / Mercedes-Geely joint venture",
+      "availabilityUk": "verify current UK launch, trims and pricing",
+      "scores": {
+        "sound": null,
+        "performance": null,
+        "comfort": null,
+        "dashboard_controls": null,
+        "phone_integration": null,
+        "security": null,
+        "quality": null,
+        "range_charging": null,
+        "value": null,
+        "software_adas": null
+      },
+      "flags": {
+        "tesla": false,
+        "featureSubscription": "verify",
+        "tabletDashboard": "verify",
+        "touchOnlyBasicControls": "verify",
+        "unreliablePhoneIntegration": "verify",
+        "theftSecurityConcern": "verify",
+        "weakUkSupport": "verify dealer/support maturity"
+      },
+      "notes": [
+        "Performance-oriented candidate. Must not get a free pass: check ride comfort mode, ADAS behaviour, phone integration and support quality.",
+        "Chinese-linked cars are allowed, but need stronger evidence around quality and software."
+      ],
+      "evidenceConfidence": "low until refreshed",
+      "lastChecked": "2026-07-06"
+    },
+    {
+      "id": "audi-a6-etron-sportback",
+      "make": "Audi",
+      "model": "A6 e-tron Sportback",
+      "bodyType": "Fastback / saloon",
+      "status": "watchlist",
+      "candidate": true,
+      "origin": "Germany",
+      "availabilityUk": "verify current UK pricing and salary-sacrifice availability",
+      "scores": {
+        "sound": null,
+        "performance": null,
+        "comfort": null,
+        "dashboard_controls": null,
+        "phone_integration": null,
+        "security": null,
+        "quality": null,
+        "range_charging": null,
+        "value": null,
+        "software_adas": null
+      },
+      "flags": {
+        "tesla": false,
+        "featureSubscription": "verify Audi subscriptions/features",
+        "tabletDashboard": false,
+        "touchOnlyBasicControls": "verify",
+        "unreliablePhoneIntegration": "verify",
+        "theftSecurityConcern": "verify"
+      },
+      "notes": [
+        "Premium candidate if the monthly salary-sacrifice number is not ridiculous.",
+        "Likely strong on refinement and dashboard integration, but must prove sound, phone reliability and value."
+      ],
+      "evidenceConfidence": "low until refreshed",
+      "lastChecked": "2026-07-06"
+    },
+    {
+      "id": "volvo-es90",
+      "make": "Volvo",
+      "model": "ES90",
+      "bodyType": "Saloon / fastback",
+      "status": "watchlist",
+      "candidate": true,
+      "origin": "China / Sweden brand",
+      "availabilityUk": "verify UK launch and timing",
+      "scores": {
+        "sound": null,
+        "performance": null,
+        "comfort": null,
+        "dashboard_controls": null,
+        "phone_integration": null,
+        "security": null,
+        "quality": null,
+        "range_charging": null,
+        "value": null,
+        "software_adas": null
+      },
+      "flags": {
+        "tesla": false,
+        "featureSubscription": "verify",
+        "tabletDashboard": "verify central-screen dependence",
+        "touchOnlyBasicControls": "verify",
+        "unreliablePhoneIntegration": "verify",
+        "theftSecurityConcern": "verify"
+      },
+      "notes": [
+        "Potentially interesting if it combines refinement, sound and performance better than the EX30.",
+        "Must be checked against dashboard/control philosophy and UK availability."
+      ],
+      "evidenceConfidence": "low until refreshed",
+      "lastChecked": "2026-07-06"
+    },
+    {
+      "id": "cupra-tavascan",
+      "make": "Cupra",
+      "model": "Tavascan",
+      "bodyType": "SUV-coupe",
+      "status": "watchlist",
+      "candidate": true,
+      "origin": "Spain / VW Group / China-built",
+      "availabilityUk": "on sale - verify trims and lease cost",
+      "scores": {
+        "sound": null,
+        "performance": null,
+        "comfort": null,
+        "dashboard_controls": null,
+        "phone_integration": null,
+        "security": null,
+        "quality": null,
+        "range_charging": null,
+        "value": null,
+        "software_adas": null
+      },
+      "flags": {
+        "tesla": false,
+        "featureSubscription": "verify VW/Cupra feature policies",
+        "tabletDashboard": "verify",
+        "touchOnlyBasicControls": "verify",
+        "unreliablePhoneIntegration": "verify",
+        "theftSecurityConcern": "verify"
+      },
+      "notes": [
+        "Representative Cupra candidate; needs current review refresh.",
+        "Check whether it feels special enough versus VW Group alternatives."
+      ],
+      "evidenceConfidence": "low until refreshed",
+      "lastChecked": "2026-07-06"
+    },
+    {
+      "id": "cupra-born-77kwh",
+      "make": "Cupra",
+      "model": "Born 77kWh",
+      "bodyType": "Hatchback",
+      "status": "watchlist",
+      "candidate": true,
+      "origin": "Spain / VW Group",
+      "availabilityUk": "on sale - verify current trims and lease cost",
+      "scores": {
+        "sound": null,
+        "performance": null,
+        "comfort": null,
+        "dashboard_controls": null,
+        "phone_integration": null,
+        "security": null,
+        "quality": null,
+        "range_charging": null,
+        "value": null,
+        "software_adas": null
+      },
+      "flags": {
+        "tesla": false,
+        "featureSubscription": "verify VW/Cupra feature policies",
+        "tabletDashboard": "verify",
+        "touchOnlyBasicControls": "verify",
+        "unreliablePhoneIntegration": "verify",
+        "theftSecurityConcern": "verify"
+      },
+      "notes": [
+        "Not the obvious emotional choice, but retained as a value/range benchmark.",
+        "Likely needs to overperform on value to remain relevant."
+      ],
+      "evidenceConfidence": "low until refreshed",
+      "lastChecked": "2026-07-06"
+    },
+    {
+      "id": "mg-im5",
+      "make": "MG",
+      "model": "IM5",
+      "bodyType": "Saloon / fastback",
+      "status": "research",
+      "candidate": true,
+      "origin": "China / SAIC",
+      "availabilityUk": "verify exact UK market naming, pricing and launch",
+      "scores": {
+        "sound": null,
+        "performance": null,
+        "comfort": null,
+        "dashboard_controls": null,
+        "phone_integration": null,
+        "security": null,
+        "quality": null,
+        "range_charging": null,
+        "value": null,
+        "software_adas": null
+      },
+      "flags": {
+        "tesla": false,
+        "featureSubscription": "verify",
+        "tabletDashboard": "verify cockpit design",
+        "touchOnlyBasicControls": "verify",
+        "unreliablePhoneIntegration": "verify",
+        "theftSecurityConcern": "verify",
+        "weakUkSupport": "verify dealer/software support maturity"
+      },
+      "notes": [
+        "No longer excluded for being Chinese, but must clear a higher evidence bar on quality, software, safety and security.",
+        "Initial task: verify UK naming, pricing and credible reviews."
+      ],
+      "evidenceConfidence": "very low until refreshed",
+      "lastChecked": "2026-07-06"
+    },
+    {
+      "id": "mg-im6",
+      "make": "MG",
+      "model": "IM6",
+      "bodyType": "SUV / crossover",
+      "status": "research",
+      "candidate": true,
+      "origin": "China / SAIC",
+      "availabilityUk": "verify exact UK market naming, pricing and launch",
+      "scores": {
+        "sound": null,
+        "performance": null,
+        "comfort": null,
+        "dashboard_controls": null,
+        "phone_integration": null,
+        "security": null,
+        "quality": null,
+        "range_charging": null,
+        "value": null,
+        "software_adas": null
+      },
+      "flags": {
+        "tesla": false,
+        "featureSubscription": "verify",
+        "tabletDashboard": "verify cockpit design",
+        "touchOnlyBasicControls": "verify",
+        "unreliablePhoneIntegration": "verify",
+        "theftSecurityConcern": "verify",
+        "weakUkSupport": "verify dealer/software support maturity"
+      },
+      "notes": [
+        "Research candidate. Must prove quality and integration, not just spec-sheet strength.",
+        "Security/insurance should be checked early because this is now a first-class requirement."
+      ],
+      "evidenceConfidence": "very low until refreshed",
+      "lastChecked": "2026-07-06"
+    }
+  ]
+}
