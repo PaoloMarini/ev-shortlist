@@ -1,0 +1,70 @@
+.fact-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+}
+
+.fact-list div {
+  padding: 10px;
+  border-radius: 14px;
+  background: rgba(128, 216, 255, 0.08);
+  border: 1px solid rgba(128, 216, 255, 0.18);
+}
+
+.fact-list dt,
+.assessment-list dt,
+.score-list dt {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.fact-list dd,
+.assessment-list dd,
+.score-list dd {
+  margin: 2px 0 0;
+  font-weight: 700;
+}
+
+.assessment-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+}
+
+.assessment-list div {
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+}
+
+.vehicle-card h4 {
+  margin: 0 0 -8px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.sources {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+details {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 10px 12px;
+  background: rgba(255,255,255,0.03);
+}
+
+summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+@media (max-width: 520px) {
+  .fact-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
