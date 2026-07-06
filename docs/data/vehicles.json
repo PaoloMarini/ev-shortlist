@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "lastUpdated": "2026-07-06",
   "benchmark": "kia-ev6-gt",
   "vehicles": [
@@ -12,17 +12,28 @@
       "candidate": false,
       "exclusionReason": "Kia is not a live candidate; kept only as the performance/cost/reference benchmark.",
       "origin": "South Korea",
-      "estimatedMonthlyCostGbp": null,
-      "availabilityUk": "on sale / benchmark only",
+      "availabilityUk": "benchmark only",
+      "facts": {
+        "priceGbp": null,
+        "rangeMiles": null,
+        "zeroTo62Sec": 3.5,
+        "maxPowerHp": 585,
+        "charge10To80Min": 18,
+        "maxDcKw": 240,
+        "audio": "Meridian system in prior benchmark; verify if comparing current model year",
+        "dashboard": "Integrated curved dual-screen layout — positive benchmark",
+        "phoneIntegration": "Known personal benchmark; refresh if using new EV6 GT data",
+        "security": "Use as security benchmark; current theft/security mitigations not yet scored"
+      },
       "scores": {
         "sound": null,
-        "performance": null,
-        "comfort": null,
+        "performance": 9,
+        "comfort": 7,
         "dashboard_controls": 9,
         "phone_integration": null,
         "security": null,
-        "quality": null,
-        "range_charging": null,
+        "quality": 7,
+        "range_charging": 8,
         "value": null,
         "software_adas": null
       },
@@ -32,11 +43,14 @@
         "tabletDashboard": false,
         "touchOnlyBasicControls": false,
         "unreliablePhoneIntegration": "unknown",
-        "theftSecurityConcern": "use as security benchmark"
+        "theftSecurityConcern": "benchmark only - verify mitigations"
       },
       "notes": [
         "Reference vehicle only: compare acceleration, lease economics, integrated dashboard feel and ownership experience.",
         "Dashboard/display integration is the positive benchmark."
+      ],
+      "sources": [
+        "Benchmark/personally known; refresh official Kia UK data if needed."
       ],
       "evidenceConfidence": "benchmark",
       "lastChecked": "2026-07-06"
@@ -44,328 +58,482 @@
     {
       "id": "volvo-ex30-ultra",
       "make": "Volvo",
-      "model": "EX30 Ultra",
+      "model": "EX30 Ultra / P8 AWD",
       "bodyType": "Compact SUV",
-      "status": "shortlist",
+      "status": "watchlist",
       "candidate": true,
       "origin": "China / Sweden brand",
-      "availabilityUk": "verify current UK availability and lead time",
+      "availabilityUk": "On sale in UK; Volvo lists 2027 model-year EX30 from £33,060; Ultra from £43,360.",
+      "facts": {
+        "priceGbp": 43360,
+        "rangeMiles": 279.6,
+        "zeroTo62Sec": 3.6,
+        "maxPowerHp": 428,
+        "charge10To80Min": 26,
+        "maxDcKw": 175,
+        "audio": "Premium audio not confirmed in current scrape; research Harman/Kardon trim availability.",
+        "dashboard": "Single central screen / minimalist cabin is a major fit risk.",
+        "phoneIntegration": "Wireless Apple CarPlay standard; Google built-in. Digital services package appears time-limited after four years.",
+        "security": "Volvo safety baseline strong; keyless/tracker/insurance evidence still needed."
+      },
       "scores": {
-        "sound": null,
-        "performance": null,
-        "comfort": null,
-        "dashboard_controls": null,
-        "phone_integration": null,
-        "security": null,
-        "quality": null,
-        "range_charging": null,
-        "value": null,
-        "software_adas": null
+        "sound": 6,
+        "performance": 9,
+        "comfort": 6,
+        "dashboard_controls": 3,
+        "phone_integration": 7,
+        "security": 5,
+        "quality": 7,
+        "range_charging": 6,
+        "value": 8,
+        "software_adas": 6
       },
       "flags": {
         "tesla": false,
-        "featureSubscription": "verify",
-        "tabletDashboard": "risk: central-screen-heavy interior",
-        "touchOnlyBasicControls": "verify",
-        "unreliablePhoneIntegration": "verify",
-        "theftSecurityConcern": "verify"
+        "featureSubscription": "Digital services package included for four years then renewable terms/fees may apply",
+        "tabletDashboard": "high risk: central-screen-heavy interior",
+        "touchOnlyBasicControls": "high risk: minimalist controls and screen-based UI",
+        "unreliablePhoneIntegration": false,
+        "theftSecurityConcern": "verify keyless/theft/insurance requirements"
       },
       "notes": [
-        "Strong value candidate from previous work, but must be tested hard against controls, screen design, sound and software maturity.",
-        "Chinese production is not an automatic rejection, but quality/support/software evidence must be explicit."
+        "Very fast and good-value on paper: 428 hp, 0-62 mph in 3.6 s, UK Ultra from £43,360, 279.6-mile WLTP estimate for P8 AWD.",
+        "Big concern for you: screen-led minimalist cockpit and limited physical controls. This is probably a test-drive veto risk, not a minor annoyance.",
+        "Wireless Apple CarPlay and Google built-in are positives, but Google services are stated as included for four years with renewal terms/fees after that."
       ],
-      "evidenceConfidence": "low until refreshed",
+      "sources": [
+        "Volvo UK EX30 page, accessed 2026-07-06.",
+        "Wired EX30 review, accessed 2026-07-06."
+      ],
+      "evidenceConfidence": "medium",
       "lastChecked": "2026-07-06"
     },
     {
       "id": "ford-explorer-ev",
       "make": "Ford",
-      "model": "Explorer EV",
+      "model": "Explorer EV Extended Range",
       "bodyType": "Mid SUV",
       "status": "watchlist",
       "candidate": true,
-      "origin": "US / Europe",
-      "availabilityUk": "verify current UK pricing, trims and lease availability",
+      "origin": "US brand / Europe-built / VW MEB platform",
+      "availabilityUk": "On sale; prior UK review pricing around £45,875 for 77kWh RWD and £53,975 AWD. Verify current Ford configurator.",
+      "facts": {
+        "priceGbp": 45875,
+        "rangeMiles": 374,
+        "zeroTo62Sec": 6.4,
+        "maxPowerHp": 286,
+        "charge10To80Min": 25,
+        "maxDcKw": 170,
+        "audio": "Soundbar/B&O-style audio noted in UK review; verify trim.",
+        "dashboard": "Tilting portrait touchscreen with hidden storage; better than a stuck-on tablet but still screen-led.",
+        "phoneIntegration": "Wireless phone charging noted; full reconnect reliability unknown.",
+        "security": "Verify keyless settings and insurance/tracker requirements."
+      },
       "scores": {
-        "sound": null,
-        "performance": null,
-        "comfort": null,
-        "dashboard_controls": null,
-        "phone_integration": null,
-        "security": null,
-        "quality": null,
-        "range_charging": null,
-        "value": null,
-        "software_adas": null
+        "sound": 7,
+        "performance": 6,
+        "comfort": 7,
+        "dashboard_controls": 6,
+        "phone_integration": 6,
+        "security": 5,
+        "quality": 6,
+        "range_charging": 7,
+        "value": 7,
+        "software_adas": 6
       },
       "flags": {
         "tesla": false,
         "featureSubscription": "verify",
-        "tabletDashboard": "verify",
-        "touchOnlyBasicControls": "verify",
-        "unreliablePhoneIntegration": "verify",
+        "tabletDashboard": "medium risk: large tilting central screen",
+        "touchOnlyBasicControls": "verify climate/control split",
+        "unreliablePhoneIntegration": "verify real-world reconnection reliability",
         "theftSecurityConcern": "verify"
       },
       "notes": [
-        "Previously kept on the watchlist pending timing, pricing and allocation confidence.",
-        "Needs a current check against comfort, infotainment, mobile integration and security expectations."
+        "Looks sensible rather than exciting: 77kWh RWD was described as the sweet spot, with 374-mile range and 0-62 mph in 6.4 s.",
+        "Ford reworked the VW MEB base with suspension/steering tuning, which is a positive for driving feel.",
+        "Two watch-outs: price/value versus more exciting candidates, and whether the portrait screen/control setup annoys you."
       ],
-      "evidenceConfidence": "low until refreshed",
+      "sources": [
+        "The Sun UK Explorer EV review, accessed 2026-07-06.",
+        "Ford Explorer EV background/spec references, accessed 2026-07-06."
+      ],
+      "evidenceConfidence": "medium-low",
       "lastChecked": "2026-07-06"
     },
     {
       "id": "smart-5-brabus",
       "make": "Smart",
       "model": "#5 Brabus",
-      "bodyType": "Compact/Mid SUV",
+      "bodyType": "Mid SUV",
       "status": "shortlist",
       "candidate": true,
       "origin": "China / Mercedes-Geely joint venture",
-      "availabilityUk": "verify current UK launch, trims and pricing",
+      "availabilityUk": "UK review reports pricing from £39,880 and Brabus at £51,800.",
+      "facts": {
+        "priceGbp": 51800,
+        "rangeMiles": null,
+        "zeroTo62Sec": 3.8,
+        "maxPowerHp": 637,
+        "charge10To80Min": null,
+        "maxDcKw": null,
+        "audio": "20-speaker Sennheiser system; Dolby Atmos OTA support reported for Premium/Brabus.",
+        "dashboard": "Hyperscreen-style fascia; strong tablet/screen-dependence risk.",
+        "phoneIntegration": "Needs UK owner/review validation.",
+        "security": "Unknown; verify keyless/tracker/insurance and Smart app maturity."
+      },
       "scores": {
-        "sound": null,
-        "performance": null,
-        "comfort": null,
-        "dashboard_controls": null,
-        "phone_integration": null,
-        "security": null,
-        "quality": null,
-        "range_charging": null,
-        "value": null,
-        "software_adas": null
+        "sound": 9,
+        "performance": 9,
+        "comfort": 7,
+        "dashboard_controls": 5,
+        "phone_integration": 5,
+        "security": 4,
+        "quality": 7,
+        "range_charging": 7,
+        "value": 8,
+        "software_adas": 6
       },
       "flags": {
         "tesla": false,
         "featureSubscription": "verify",
-        "tabletDashboard": "verify",
+        "tabletDashboard": "risk: hyperscreen-style fascia",
         "touchOnlyBasicControls": "verify",
         "unreliablePhoneIntegration": "verify",
         "theftSecurityConcern": "verify",
-        "weakUkSupport": "verify dealer/support maturity"
+        "weakUkSupport": "verify dealer/software support maturity"
       },
       "notes": [
-        "Performance-oriented candidate. Must not get a free pass: check ride comfort mode, ADAS behaviour, phone integration and support quality.",
-        "Chinese-linked cars are allowed, but need stronger evidence around quality and software."
+        "Promoted to serious shortlist because it hits sound and performance hard: 20-speaker Sennheiser, Dolby Atmos support reported, Brabus 0-62 mph in 3.8 s and £51,800 UK price.",
+        "This is exactly where you need discipline: do not be seduced by the spec sheet until phone integration, controls, ride comfort and security are proven.",
+        "The Mercedes/Geely setup and value are promising, but support maturity still needs checking."
       ],
-      "evidenceConfidence": "low until refreshed",
+      "sources": [
+        "The Times Smart #5 review, 2026-05-21.",
+        "Welt Smart #5 Dolby Atmos update, 2026-03-12."
+      ],
+      "evidenceConfidence": "medium",
       "lastChecked": "2026-07-06"
     },
     {
       "id": "audi-a6-etron-sportback",
       "make": "Audi",
-      "model": "A6 e-tron Sportback",
+      "model": "A6 Sportback e-tron quattro / Performance",
       "bodyType": "Fastback / saloon",
-      "status": "watchlist",
+      "status": "shortlist",
       "candidate": true,
       "origin": "Germany",
-      "availabilityUk": "verify current UK pricing and salary-sacrifice availability",
+      "availabilityUk": "On sale in UK; Audi lists A6 Sportback e-tron from £63,365 OTR.",
+      "facts": {
+        "priceGbp": 63365,
+        "rangeMiles": 468,
+        "zeroTo62Sec": 4.5,
+        "maxPowerHp": 462,
+        "charge10To80Min": 21,
+        "maxDcKw": 270,
+        "audio": "Bang & Olufsen head-rest speakers / 3D sound in Technology Pack.",
+        "dashboard": "Premium curved OLED panoramic display; integrated but screen-heavy. Avoid virtual mirrors unless proven acceptable.",
+        "phoneIntegration": "Android Automotive/CarPlay support reported; reliability needs owner evidence.",
+        "security": "Audi/VW security and insurance requirements need checking."
+      },
       "scores": {
-        "sound": null,
-        "performance": null,
-        "comfort": null,
-        "dashboard_controls": null,
-        "phone_integration": null,
-        "security": null,
-        "quality": null,
-        "range_charging": null,
-        "value": null,
-        "software_adas": null
+        "sound": 8,
+        "performance": 8,
+        "comfort": 8,
+        "dashboard_controls": 8,
+        "phone_integration": 7,
+        "security": 5,
+        "quality": 8,
+        "range_charging": 9,
+        "value": 5,
+        "software_adas": 7
       },
       "flags": {
         "tesla": false,
-        "featureSubscription": "verify Audi subscriptions/features",
+        "featureSubscription": "verify Audi subscriptions/features and option packs",
         "tabletDashboard": false,
-        "touchOnlyBasicControls": "verify",
+        "touchOnlyBasicControls": "verify haptic/screen dependence",
         "unreliablePhoneIntegration": "verify",
-        "theftSecurityConcern": "verify"
+        "theftSecurityConcern": "verify",
+        "expensive": "salary-sacrifice affordability needs checking"
       },
       "notes": [
-        "Premium candidate if the monthly salary-sacrifice number is acceptable.",
-        "Likely strong on refinement and dashboard integration, but must prove sound, phone reliability and value."
+        "Promoted to shortlist: official UK page gives up to 468 miles, up to 462 PS, 0-62 mph in 4.5 s, and up to 270 kW DC charging.",
+        "Strong match for integrated dashboard and premium feel; B&O head-rest speakers are a sound-system positive.",
+        "Two risks: £63,365 starting price may be high in salary sacrifice, and review criticism around optional virtual mirrors/ride on large wheels means trim choice matters."
       ],
-      "evidenceConfidence": "low until refreshed",
+      "sources": [
+        "Audi UK A6 Sportback e-tron page, accessed 2026-07-06.",
+        "The Times Audi A6 Avant e-tron review, accessed 2026-07-06.",
+        "Tom's Guide Audi A6 Sportback e-tron review, accessed 2026-07-06."
+      ],
+      "evidenceConfidence": "medium-high",
       "lastChecked": "2026-07-06"
     },
     {
       "id": "volvo-es90",
       "make": "Volvo",
-      "model": "ES90",
+      "model": "ES90 Ultra / Twin Motor Performance",
       "bodyType": "Saloon / fastback",
       "status": "watchlist",
       "candidate": true,
       "origin": "China / Sweden brand",
-      "availabilityUk": "verify UK launch and timing",
+      "availabilityUk": "On sale/configurable in UK; Volvo lists ES90 from £67,560 and Ultra from £77,260.",
+      "facts": {
+        "priceGbp": 67560,
+        "rangeMiles": 432.5,
+        "zeroTo62Sec": 4.0,
+        "maxPowerHp": 680,
+        "charge10To80Min": 22,
+        "maxDcKw": 350,
+        "audio": "Bose standard on Plus; Bowers & Wilkins on Ultra.",
+        "dashboard": "Large central touchscreen with small driver display; more integrated than EX30 but still screen-led.",
+        "phoneIntegration": "Wireless Apple CarPlay and Google built-in standard; Google services package has renewal terms after included period.",
+        "security": "New model; verify keyless/tracker/insurance and real-world software maturity."
+      },
       "scores": {
-        "sound": null,
-        "performance": null,
-        "comfort": null,
-        "dashboard_controls": null,
-        "phone_integration": null,
-        "security": null,
-        "quality": null,
-        "range_charging": null,
-        "value": null,
-        "software_adas": null
+        "sound": 9,
+        "performance": 8,
+        "comfort": 8,
+        "dashboard_controls": 6,
+        "phone_integration": 7,
+        "security": 5,
+        "quality": 8,
+        "range_charging": 9,
+        "value": 4,
+        "software_adas": 6
       },
       "flags": {
         "tesla": false,
-        "featureSubscription": "verify",
-        "tabletDashboard": "verify central-screen dependence",
+        "featureSubscription": "Google services package renewal terms/fees may apply after included period",
+        "tabletDashboard": "medium risk: central-screen-led Volvo interior",
         "touchOnlyBasicControls": "verify",
-        "unreliablePhoneIntegration": "verify",
-        "theftSecurityConcern": "verify"
+        "unreliablePhoneIntegration": false,
+        "theftSecurityConcern": "verify",
+        "expensive": "likely expensive in salary sacrifice"
       },
       "notes": [
-        "Potentially interesting if it combines refinement, sound and performance better than the EX30.",
-        "Must be checked against dashboard/control philosophy and UK availability."
+        "Very strong on paper for your top priorities: Bowers & Wilkins on Ultra, 680 hp Performance option, 4.0 s 0-62 mph, 432.5-mile WLTP estimate and 22-minute 10-80%.",
+        "Cost is the obvious problem: from £67,560, Ultra from £77,260. It may be too expensive unless salary sacrifice is surprisingly favourable.",
+        "Dashboard/control philosophy must be tested; it risks repeating the Volvo central-screen problem in a more premium wrapper."
       ],
-      "evidenceConfidence": "low until refreshed",
+      "sources": [
+        "Volvo UK ES90 page, accessed 2026-07-06."
+      ],
+      "evidenceConfidence": "medium",
       "lastChecked": "2026-07-06"
     },
     {
       "id": "cupra-tavascan",
       "make": "Cupra",
-      "model": "Tavascan",
+      "model": "Tavascan VZ",
       "bodyType": "SUV-coupe",
       "status": "watchlist",
       "candidate": true,
       "origin": "Spain / VW Group / China-built",
-      "availabilityUk": "on sale - verify trims and lease cost",
+      "availabilityUk": "On sale; prior UK review noted circa £48,000 and 320-mile range; fleet article cites up to 352 miles.",
+      "facts": {
+        "priceGbp": 48000,
+        "rangeMiles": 352,
+        "zeroTo62Sec": 5.5,
+        "maxPowerHp": 340,
+        "charge10To80Min": 28,
+        "maxDcKw": 135,
+        "audio": "12-speaker Sennheiser system reported.",
+        "dashboard": "Driver-oriented but has prominent central screen/spine; test for annoyance.",
+        "phoneIntegration": "Smartphone integration reported; reconnect reliability unknown.",
+        "security": "Verify keyless/insurance/tracker requirements."
+      },
       "scores": {
-        "sound": null,
-        "performance": null,
-        "comfort": null,
-        "dashboard_controls": null,
-        "phone_integration": null,
-        "security": null,
-        "quality": null,
-        "range_charging": null,
-        "value": null,
-        "software_adas": null
+        "sound": 8,
+        "performance": 7,
+        "comfort": 7,
+        "dashboard_controls": 6,
+        "phone_integration": 6,
+        "security": 5,
+        "quality": 7,
+        "range_charging": 6,
+        "value": 7,
+        "software_adas": 6
       },
       "flags": {
         "tesla": false,
         "featureSubscription": "verify VW/Cupra feature policies",
-        "tabletDashboard": "verify",
+        "tabletDashboard": "medium risk",
         "touchOnlyBasicControls": "verify",
         "unreliablePhoneIntegration": "verify",
         "theftSecurityConcern": "verify"
       },
       "notes": [
-        "Representative Cupra candidate; needs current review refresh.",
-        "Check whether it feels special enough versus VW Group alternatives."
+        "Good fit as a stylish, driver-oriented crossover: 340 PS VZ, roughly 5.5 s 0-62 mph, up to 352-mile range, Sennheiser audio and Dynamic Chassis Control.",
+        "Not as fast as the best candidates, but it may be more balanced than the spec sheet suggests.",
+        "Needs test-drive focus on controls, software and phone behaviour."
       ],
-      "evidenceConfidence": "low until refreshed",
+      "sources": [
+        "Guardian/Cupra Tavascan UK fleet article, 2024-11-25.",
+        "The Sun Cupra Tavascan review, accessed 2026-07-06."
+      ],
+      "evidenceConfidence": "medium",
       "lastChecked": "2026-07-06"
     },
     {
       "id": "cupra-born-77kwh",
       "make": "Cupra",
-      "model": "Born 77kWh",
+      "model": "Born VZ / 77-79kWh",
       "bodyType": "Hatchback",
       "status": "watchlist",
       "candidate": true,
       "origin": "Spain / VW Group",
-      "availabilityUk": "on sale - verify current trims and lease cost",
+      "availabilityUk": "On sale; facelift reported in 2026 with more physical buttons and improved materials.",
+      "facts": {
+        "priceGbp": null,
+        "rangeMiles": 372,
+        "zeroTo62Sec": 5.6,
+        "maxPowerHp": 326,
+        "charge10To80Min": null,
+        "maxDcKw": 185,
+        "audio": "Audio not yet proven; Sennheiser appears stronger on newer Cupra models.",
+        "dashboard": "2026 facelift reportedly adds traditional steering wheel buttons and improved materials.",
+        "phoneIntegration": "Verify current Android-based infotainment and reconnect reliability.",
+        "security": "Verify keyless/insurance/tracker requirements."
+      },
       "scores": {
-        "sound": null,
-        "performance": null,
-        "comfort": null,
-        "dashboard_controls": null,
-        "phone_integration": null,
-        "security": null,
-        "quality": null,
-        "range_charging": null,
-        "value": null,
-        "software_adas": null
+        "sound": 6,
+        "performance": 7,
+        "comfort": 6,
+        "dashboard_controls": 7,
+        "phone_integration": 6,
+        "security": 5,
+        "quality": 7,
+        "range_charging": 7,
+        "value": 7,
+        "software_adas": 6
       },
       "flags": {
         "tesla": false,
         "featureSubscription": "verify VW/Cupra feature policies",
-        "tabletDashboard": "verify",
-        "touchOnlyBasicControls": "verify",
+        "tabletDashboard": "lower risk after 2026 facelift but verify",
+        "touchOnlyBasicControls": false,
         "unreliablePhoneIntegration": "verify",
         "theftSecurityConcern": "verify"
       },
       "notes": [
-        "Not the obvious emotional choice, but retained as a value/range benchmark.",
-        "Likely needs to overperform on value to remain relevant."
+        "The 2026 facelift is relevant because it reportedly restores traditional steering-wheel buttons and improves materials — directly aligned with your physical-control preference.",
+        "Born VZ is quick enough rather than outrageous: 326 hp, 0-100 km/h in 5.6 s, up to 599 km WLTP in some references.",
+        "Probably remains a value/ergonomics candidate, not the emotional front-runner unless salary sacrifice is excellent."
       ],
-      "evidenceConfidence": "low until refreshed",
+      "sources": [
+        "Cupra Born model/spec references, accessed 2026-07-06."
+      ],
+      "evidenceConfidence": "medium-low",
       "lastChecked": "2026-07-06"
     },
     {
       "id": "mg-im5",
       "make": "MG",
-      "model": "IM5",
+      "model": "IM5 Performance / Long Range",
       "bodyType": "Saloon / fastback",
       "status": "research",
       "candidate": true,
       "origin": "China / SAIC",
-      "availabilityUk": "verify exact UK market naming, pricing and launch",
+      "availabilityUk": "UK launch/pricing evidence mixed; recent European reports cite UK as reference market and European launch in July 2026.",
+      "facts": {
+        "priceGbp": 39450,
+        "rangeMiles": 441,
+        "zeroTo62Sec": 3.2,
+        "maxPowerHp": 751,
+        "charge10To80Min": 17,
+        "maxDcKw": 400,
+        "audio": "20-speaker system reported as standard in European report.",
+        "dashboard": "26.3-inch panoramic display plus central screen; very high dashboard-risk for your taste.",
+        "phoneIntegration": "Unproven; must verify CarPlay/Android Auto/Bluetooth reconnect and app maturity.",
+        "security": "High uncertainty; verify insurance, keyless mitigation, tracker support, app security."
+      },
       "scores": {
-        "sound": null,
-        "performance": null,
-        "comfort": null,
-        "dashboard_controls": null,
-        "phone_integration": null,
-        "security": null,
-        "quality": null,
-        "range_charging": null,
-        "value": null,
-        "software_adas": null
+        "sound": 8,
+        "performance": 10,
+        "comfort": 7,
+        "dashboard_controls": 4,
+        "phone_integration": 4,
+        "security": 3,
+        "quality": 5,
+        "range_charging": 9,
+        "value": 9,
+        "software_adas": 5
       },
       "flags": {
         "tesla": false,
         "featureSubscription": "verify",
-        "tabletDashboard": "verify cockpit design",
+        "tabletDashboard": "high risk: panoramic display/cockpit concept",
         "touchOnlyBasicControls": "verify",
         "unreliablePhoneIntegration": "verify",
-        "theftSecurityConcern": "verify",
-        "weakUkSupport": "verify dealer/software support maturity"
+        "theftSecurityConcern": "high uncertainty",
+        "weakUkSupport": "verify MG/IM dealer and software support maturity"
       },
       "notes": [
-        "No longer excluded for being Chinese, but must clear a higher evidence bar on quality, software, safety and security.",
-        "Initial task: verify UK naming, pricing and credible reviews."
+        "Spec-sheet monster: reported 751 hp Performance, 3.2 s 0-100 km/h, up to 441 miles/710 km on Long Range and 17-minute 10-80% charging.",
+        "The price/value proposition looks disruptive, but this is exactly where we should be sceptical: support, software, phone integration, controls and security are unproven.",
+        "Keep in research until we find UK owner reviews, insurance data and dealer answers."
       ],
-      "evidenceConfidence": "very low until refreshed",
+      "sources": [
+        "Welt MG IM5/IM6 Europe report, 2026-06-01 and 2026-07-06.",
+        "The Sun MG IM5/IM6 UK report, 2025-07-30."
+      ],
+      "evidenceConfidence": "low",
       "lastChecked": "2026-07-06"
     },
     {
       "id": "mg-im6",
       "make": "MG",
-      "model": "IM6",
+      "model": "IM6 Performance / Long Range",
       "bodyType": "SUV / crossover",
       "status": "research",
       "candidate": true,
       "origin": "China / SAIC",
-      "availabilityUk": "verify exact UK market naming, pricing and launch",
+      "availabilityUk": "UK market appears active/referenced; recent European reports cite IM6 from €56,990 and UK pricing as a reference. Verify MG UK configurator/dealer availability.",
+      "facts": {
+        "priceGbp": null,
+        "rangeMiles": null,
+        "zeroTo62Sec": null,
+        "maxPowerHp": 751,
+        "charge10To80Min": 17,
+        "maxDcKw": 400,
+        "audio": "20-speaker system reported as standard in European report.",
+        "dashboard": "26.3-inch panoramic display plus central screen; very high dashboard-risk for your taste.",
+        "phoneIntegration": "Unproven; must verify CarPlay/Android Auto/Bluetooth reconnect and app maturity.",
+        "security": "High uncertainty; verify insurance, keyless mitigation, tracker support, app security."
+      },
       "scores": {
-        "sound": null,
-        "performance": null,
-        "comfort": null,
-        "dashboard_controls": null,
-        "phone_integration": null,
-        "security": null,
-        "quality": null,
-        "range_charging": null,
-        "value": null,
-        "software_adas": null
+        "sound": 8,
+        "performance": 9,
+        "comfort": 7,
+        "dashboard_controls": 4,
+        "phone_integration": 4,
+        "security": 3,
+        "quality": 5,
+        "range_charging": 8,
+        "value": 8,
+        "software_adas": 5
       },
       "flags": {
         "tesla": false,
         "featureSubscription": "verify",
-        "tabletDashboard": "verify cockpit design",
+        "tabletDashboard": "high risk: panoramic display/cockpit concept",
         "touchOnlyBasicControls": "verify",
         "unreliablePhoneIntegration": "verify",
-        "theftSecurityConcern": "verify",
-        "weakUkSupport": "verify dealer/software support maturity"
+        "theftSecurityConcern": "high uncertainty",
+        "weakUkSupport": "verify MG/IM dealer and software support maturity"
       },
       "notes": [
-        "Research candidate. Must prove quality and integration, not just spec-sheet strength.",
-        "Security/insurance should be checked early because this is now a first-class requirement."
+        "Potentially very strong as a family SUV: 100 kWh, 800V, reported 20-speaker audio, all-wheel steering and large boot/frunk figures.",
+        "But it is more likely than the IM5 to feel large/heavy, and the cockpit philosophy may clash hard with your anti-tablet-dashboard preference.",
+        "Keep in research until UK test reviews and insurance/security details are available."
       ],
-      "evidenceConfidence": "very low until refreshed",
+      "sources": [
+        "Welt MG IM5/IM6 Europe report, 2026-06-01 and 2026-07-06.",
+        "MG IM6 market reference pages, accessed 2026-07-06."
+      ],
+      "evidenceConfidence": "low",
       "lastChecked": "2026-07-06"
     }
   ]
