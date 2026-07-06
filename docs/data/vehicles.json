@@ -12,7 +12,7 @@
       "candidate": false,
       "exclusionReason": "Kia is not a live candidate; kept only as the performance/cost/reference benchmark.",
       "origin": "South Korea",
-      "estimatedMonthlyCostGbp": 700,
+      "estimatedMonthlyCostGbp": null,
       "availabilityUk": "on sale / benchmark only",
       "scores": {
         "sound": null,
@@ -32,13 +32,13 @@
         "tabletDashboard": false,
         "touchOnlyBasicControls": false,
         "unreliablePhoneIntegration": "unknown",
-        "theftSecurityConcern": "previous vehicle was stolen; use as security benchmark"
+        "theftSecurityConcern": "use as security benchmark"
       },
       "notes": [
         "Reference vehicle only: compare acceleration, lease economics, integrated dashboard feel and ownership experience.",
-        "Dashboard/display integration was liked and should be used as the positive benchmark."
+        "Dashboard/display integration is the positive benchmark."
       ],
-      "evidenceConfidence": "personal benchmark",
+      "evidenceConfidence": "benchmark",
       "lastChecked": "2026-07-06"
     },
     {
@@ -180,7 +180,7 @@
         "theftSecurityConcern": "verify"
       },
       "notes": [
-        "Premium candidate if the monthly salary-sacrifice number is not ridiculous.",
+        "Premium candidate if the monthly salary-sacrifice number is acceptable.",
         "Likely strong on refinement and dashboard integration, but must prove sound, phone reliability and value."
       ],
       "evidenceConfidence": "low until refreshed",
