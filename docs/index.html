@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>EV Shortlist Dashboard</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="facts.css" />
 </head>
 <body>
   <header class="hero">
     <div>
-      <p class="eyebrow">Private EV decision dashboard</p>
+      <p class="eyebrow">EV decision dashboard</p>
       <h1>Next EV shortlist</h1>
       <p class="lede">A living comparison of candidate EVs against the things that actually matter: sound, performance, comfort, dashboard ergonomics, phone reliability, security and value.</p>
     </div>
@@ -81,9 +82,17 @@
           <strong class="score">—</strong>
         </div>
       </div>
+      <dl class="fact-list"></dl>
       <div class="flag-list"></div>
-      <dl class="score-list"></dl>
+      <dl class="assessment-list"></dl>
+      <details>
+        <summary>Criterion scores</summary>
+        <dl class="score-list"></dl>
+      </details>
+      <h4>Notes</h4>
       <ul class="notes"></ul>
+      <h4>Sources checked</h4>
+      <ul class="sources"></ul>
       <p class="confidence"></p>
     </article>
   </template>
