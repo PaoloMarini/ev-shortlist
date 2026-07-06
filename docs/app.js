@@ -39,6 +39,32 @@ function unknownCount(vehicle) {
   return state.criteria.filter((criterion) => typeof vehicle.scores?.[criterion.id] !== "number").length;
 }
 
+function formatFactValue(key, value) {
+  if (value === null || value === undefined || value === "") return "TBD";
+  if (key === "priceGbp") return `£${Number(value).toLocaleString("en-GB")}`;
+  if (key === "rangeMiles") return `${value} miles`;
+  if (key === "zeroTo62Sec") return `${value}s 0–62`;
+  if (key === "maxPowerHp") return `${value} hp`;
+  if (key === "charge10To80Min") return `${value} min 10–80%`;
+  if (key === "maxDcKw") return `${value} kW DC`;
+  return value;
+}
+
+function factLabel(key) {
+  return {
+    priceGbp: "Price",
+    rangeMiles: "Range",
+    zeroTo62Sec: "Acceleration",
+    maxPowerHp: "Power",
+    charge10To80Min: "Charging",
+    maxDcKw: "Peak DC",
+    audio: "Audio",
+    dashboard: "Dashboard",
+    phoneIntegration: "Phone",
+    security: "Security"
+  }[key] || key;
+}
+
 function flagItems(vehicle) {
   const flags = vehicle.flags || {};
   const items = [];
@@ -60,6 +86,9 @@ function flagItems(vehicle) {
   }
   if (flags.weakUkSupport && flags.weakUkSupport !== false) {
     items.push({ label: "UK support?", severity: "warn" });
+  }
+  if (flags.expensive) {
+    items.push({ label: "Cost risk", severity: "warn" });
   }
 
   return items;
@@ -120,6 +149,23 @@ function renderVehicles() {
     node.querySelector(".meta").textContent = `${vehicle.bodyType || "Unknown body"} · ${vehicle.origin || "origin TBD"} · ${vehicle.availabilityUk || "availability TBD"}`;
     node.querySelector(".score").textContent = score === null ? "—" : score.toFixed(1);
 
+    const factList = node.querySelector(".fact-list");
+    const facts = vehicle.facts || {};
+    ["priceGbp", "rangeMiles", "zeroTo62Sec", "maxPowerHp", "charge10To80Min", "maxDcKw"].forEach((key) => {
+      if (facts[key] === undefined) return;
+      const div = document.createElement("div");
+      div.innerHTML = `<dt>${factLabel(key)}</dt><dd>${formatFactValue(key, facts[key])}</dd>`;
+      factList.appendChild(div);
+    });
+
+    const assessmentList = node.querySelector(".assessment-list");
+    ["audio", "dashboard", "phoneIntegration", "security"].forEach((key) => {
+      if (!facts[key]) return;
+      const div = document.createElement("div");
+      div.innerHTML = `<dt>${factLabel(key)}</dt><dd>${facts[key]}</dd>`;
+      assessmentList.appendChild(div);
+    });
+
     const flagList = node.querySelector(".flag-list");
     const flags = flagItems(vehicle);
     if (!flags.length) {
@@ -153,6 +199,13 @@ function renderVehicles() {
       const li = document.createElement("li");
       li.textContent = note;
       notes.appendChild(li);
+    });
+
+    const sources = node.querySelector(".sources");
+    (vehicle.sources || []).forEach((source) => {
+      const li = document.createElement("li");
+      li.textContent = source;
+      sources.appendChild(li);
     });
 
     node.querySelector(".confidence").textContent = `Evidence confidence: ${vehicle.evidenceConfidence || "unknown"}. Last checked: ${vehicle.lastChecked || "TBD"}.`;
