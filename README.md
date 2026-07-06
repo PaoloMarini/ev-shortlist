@@ -1,8 +1,8 @@
 # EV Shortlist Dashboard
 
-Private single source of truth for choosing the next EV.
+Single source of truth for evaluating EV candidates.
 
-The repo now supports **Option C**: structured vehicle data plus a static dashboard that can be updated by ChatGPT/Codex and reviewed in GitHub.
+The repo supports **Option C**: structured vehicle data plus a static dashboard that can be updated by ChatGPT/Codex and reviewed in GitHub.
 
 ## Current decision rules
 
@@ -12,7 +12,7 @@ The repo now supports **Option C**: structured vehicle data plus a static dashbo
 - **Kia is not a live candidate**, but the Kia EV6 GT remains the benchmark/reference point.
 - Chinese-brand cars are **not automatically excluded** anymore, but quality, support, software, safety and security evidence must be stronger than normal.
 - Subscription-gated hardware features are a serious red flag, especially comfort features such as heated seats.
-- A repeat of the stolen EV6 experience is unacceptable: theft resistance, key security, tracking/immobilisation options and insurance implications are first-class criteria.
+- Security, theft resistance, key security, tracking/immobilisation options and insurance implications are first-class criteria.
 
 ### What matters most
 
@@ -68,7 +68,7 @@ Each weekly update should:
 
 The dashboard is designed to work as a GitHub Pages static site from the `/docs` folder.
 
-Keep the repo private until the data and notes are clean enough to expose publicly. If publishing later, review for personal lease costs, notes about theft/security, and anything that should remain private.
+Before publishing or sharing widely, review vehicle notes for personal pricing assumptions, security notes, and anything that should remain private.
 
 ## Accuracy rule
 
