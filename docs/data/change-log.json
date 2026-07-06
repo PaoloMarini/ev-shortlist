@@ -2,6 +2,19 @@
   "entries": [
     {
       "date": "2026-07-06",
+      "type": "research",
+      "summary": "First evidence-backed market refresh and dashboard scoring pass.",
+      "details": [
+        "Promoted Audi A6 Sportback e-tron to shortlist because it is strong on range, charging, integrated dashboard, B&O audio option and premium fit.",
+        "Kept Smart #5 Brabus on shortlist because it strongly matches sound and performance, but flagged screen/control, phone integration, support and security as validation risks.",
+        "Moved Volvo EX30 from shortlist to watchlist because the central-screen/minimal-controls philosophy conflicts with dashboard and physical-control preferences despite excellent performance/value.",
+        "Added Volvo ES90 as a high-potential but expensive watchlist car: strong sound, power, range and charging; dashboard and cost need validation.",
+        "Kept MG IM5 and IM6 in research despite exceptional specs because quality, controls, phone integration, security and UK support remain insufficiently proven.",
+        "Added visible key facts and source summaries to the dashboard cards."
+      ]
+    },
+    {
+      "date": "2026-07-06",
       "type": "structure",
       "summary": "Moved from flat CSV-only tracking toward structured data plus static dashboard.",
       "details": [
