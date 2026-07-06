@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "lastUpdated": "2026-07-06",
+  "scoringScale": "0-10, null means insufficient evidence",
+  "hardFilters": [
+    {
+      "id": "tesla_excluded",
+      "label": "Tesla excluded",
+      "description": "Tesla vehicles are excluded regardless of score."
+    },
+    {
+      "id": "no_hardware_feature_ransom",
+      "label": "No offensive feature subscriptions",
+      "description": "Subscription-gated hardware comfort features are a serious red flag and may become a veto."
+    }
+  ],
+  "criteria": [
+    {
+      "id": "sound",
+      "label": "Sound / audio",
+      "weight": 18,
+      "description": "Audio system quality, cabin quietness, bass/sub quality, lack of rattles, media integration."
+    },
+    {
+      "id": "performance",
+      "label": "Performance",
+      "weight": 16,
+      "description": "Strong acceleration and enjoyable power delivery. Fast is a positive, especially when the car can relax in normal driving."
+    },
+    {
+      "id": "comfort",
+      "label": "Comfort / ride",
+      "weight": 14,
+      "description": "Ride quality, seat comfort, motorway refinement and whether suspension/drive modes can prioritise comfort."
+    },
+    {
+      "id": "dashboard_controls",
+      "label": "Dashboard / controls",
+      "weight": 12,
+      "description": "Integrated displays, avoidance of stuck-on-tablet design, physical controls for core functions, no silly touchscreen-only basics."
+    },
+    {
+      "id": "phone_integration",
+      "label": "Phone integration",
+      "weight": 12,
+      "description": "Reliable Bluetooth, CarPlay/Android Auto, reconnection behaviour, multiple-driver handling, app/key reliability."
+    },
+    {
+      "id": "security",
+      "label": "Security / theft resistance",
+      "weight": 10,
+      "description": "Keyless theft mitigation, alarm/immobiliser strength, tracking options, app/key security, insurance implications and practical anti-theft setup."
+    },
+    {
+      "id": "quality",
+      "label": "Premium feel / quality",
+      "weight": 8,
+      "description": "Interior quality, fit/finish, durability confidence, dealer/support confidence."
+    },
+    {
+      "id": "range_charging",
+      "label": "Range + charging",
+      "weight": 5,
+      "description": "Real-world range, charging curve, 10-80% time, charging network practicality."
+    },
+    {
+      "id": "value",
+      "label": "Salary-sacrifice value",
+      "weight": 3,
+      "description": "Monthly cost versus what the car delivers, with the EV6 GT as the mental benchmark."
+    },
+    {
+      "id": "software_adas",
+      "label": "Software / ADAS annoyance",
+      "weight": 2,
+      "description": "Infotainment responsiveness, OTA maturity, app reliability, driver-assistance nags and false interventions."
+    }
+  ],
+  "redFlags": [
+    "tesla",
+    "feature_subscription",
+    "tablet_dashboard",
+    "touch_only_basic_controls",
+    "unreliable_phone_integration",
+    "poor_audio",
+    "harsh_unconfigurable_ride",
+    "theft_security_concern",
+    "weak_uk_support",
+    "uncertain_salary_sacrifice_availability"
+  ]
+}
