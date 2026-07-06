@@ -1,6 +1,6 @@
 # Security and theft checklist
 
-The stolen EV6 experience means security must be treated as a core buying criterion, not an afterthought.
+Vehicle security is a core buying criterion, not an afterthought.
 
 ## What to check for every candidate
 
@@ -17,9 +17,9 @@ The stolen EV6 experience means security must be treated as a core buying criter
 ### Practical ownership setup
 
 - Compatibility with a Thatcham-approved tracker if required by insurance.
-- Ghost/aftermarket immobiliser compatibility and warranty implications.
+- Aftermarket immobiliser compatibility and warranty implications.
 - Faraday pouch need for keys.
-- Physical anti-theft options: steering lock, driveway bollard, wheel clamp, parking camera/security lighting.
+- Physical anti-theft options such as steering lock, secure parking, camera coverage and lighting.
 - Insurance premium/loadings versus the EV6 GT benchmark.
 - Whether the model is appearing in theft reports or insurer concern lists.
 
