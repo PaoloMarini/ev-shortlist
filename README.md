@@ -1,52 +1,75 @@
-# ev-shortlist (private)
+# EV Shortlist Dashboard
 
-A single source of truth for your EV shortlist, owned in GitHub and easy to query/update via ChatGPT.
+Private single source of truth for choosing the next EV.
 
-## Files
-- `shortlist.csv` ← **Master data** (authoritative)
-- `shortlist.md` ← Human-readable view of the above (generated manually as needed)
-- `/notes/*.md` ← Per-vehicle free-form notes
-- `/history/` ← Optional area for notable change logs
+The repo now supports **Option C**: structured vehicle data plus a static dashboard that can be updated by ChatGPT/Codex and reviewed in GitHub.
 
-## Schema (`shortlist.csv`)
-| column | type | description |
-|---|---|---|
-| model | text | e.g., "EX30 Ultra" |
-| make | text | e.g., "Volvo" |
-| body_type | text | SUV, Hatchback, Saloon, etc. |
-| battery_kWh | number | usable battery capacity |
-| range_WLTP_km | number | WLTP range in km |
-| fast_charge_kW | number | peak DC charge rate |
-| zeroTo100_kmh_sec | number | 0–100 km/h time |
-| price_GBP | number | OTR price in GBP |
-| towing_kg | number | braked towing capacity |
-| boot_l | number | boot volume (seats up) |
-| euro_ncap | text/number | rating or year |
-| heated_seat_subscription | yes/no/TBD | whether heated seats require subscription |
-| software_subscriptions_notes | text | free-form |
-| availability_UK | text/date | e.g., "On sale", "Q2 2026", date |
-| status | enum | shortlisted / watchlist / research / comparison_only / dismissed |
-| brief_notes | text | quick context |
-| last_updated | date | ISO date of last change |
+## Current decision rules
 
-## How to update via ChatGPT
-Use clear, patch-style instructions. Examples:
+### Non-negotiables
 
-> Update **Volvo EX30**: set `heated_seat_subscription` to `no`; add note "confirmed by dealer 2025-11-10".  
-> Add new row **Audi Q6 e-tron**: price 68,000; WLTP 625; battery 100; fast_charge 270; status watchlist.
+- **Tesla is excluded.**
+- **Kia is not a live candidate**, but the Kia EV6 GT remains the benchmark/reference point.
+- Chinese-brand cars are **not automatically excluded** anymore, but quality, support, software, safety and security evidence must be stronger than normal.
+- Subscription-gated hardware features are a serious red flag, especially comfort features such as heated seats.
+- A repeat of the stolen EV6 experience is unacceptable: theft resistance, key security, tracking/immobilisation options and insurance implications are first-class criteria.
 
-ChatGPT will prepare either:
-1) a **diff** (unified patch) you can paste into GitHub, **or**
-2) an **updated `shortlist.csv` file** to upload via the GitHub web UI.
+### What matters most
 
-## Commit message convention
-- `feat(data): add Audi Q6 e-tron initial row`
-- `chore(data): update EX30 heated-seat subscription=no`
-- `docs(notes): add Smart #5 Brabus notes with ADAS details`
+1. Sound/audio quality and cabin noise isolation.
+2. Strong performance, ideally with comfort-oriented suspension/drive modes for normal driving.
+3. Comfort and ride configurability.
+4. Integrated dashboard design, not a tablet stuck on the dash.
+5. Useful physical controls for core functions.
+6. Flawless mobile phone integration: CarPlay/Android Auto/Bluetooth/app/key behaviour must be reliable.
+7. Premium feel, build quality and long-term confidence.
+8. Range, charging curve and real-world practicality.
+9. Salary-sacrifice value versus the EV6 GT benchmark.
+10. Software/ADAS annoyance factor.
 
-## Safety / accuracy
-Many fields are `TBD` initially. As we confirm specs (with citations), we update the CSV and notes. When uncertain, prefer `TBD` + a note instead of guessing.
+## Structure
 
----
+```text
+docs/
+  index.html              Static dashboard entry point
+  app.js                  Dashboard logic
+  styles.css              Dashboard styling
+  data/
+    vehicles.json         Authoritative vehicle data for the dashboard
+    criteria.json         Criteria, weights and red-flag definitions
+    change-log.json       Human-readable update history
+notes/
+  security-and-theft.md   Security-specific notes and evaluation checklist
+prompts/
+  weekly-update.md        Prompt for the Friday market refresh
+shortlist.csv             Legacy flat master table retained for continuity
+shortlist.md              Legacy human-readable table retained for continuity
+```
 
-*Initialized on 2025-11-02.*
+## Operating model
+
+Every vehicle has one status:
+
+- `benchmark` — not a candidate, used for comparison.
+- `shortlist` — serious candidate.
+- `watchlist` — interesting, but waiting for price, launch, reviews, NCAP, lease data or reliability evidence.
+- `research` — mentioned but not yet assessed properly.
+- `rejected` — considered and ruled out, with reason.
+
+Each weekly update should:
+
+1. Check UK pricing, lease/salary-sacrifice availability, trims and launch timing.
+2. Check reviews for sound quality, ride, dashboard/controls, software, phone integration and ADAS behaviour.
+3. Check safety and security: Euro NCAP, theft/keyless-entry concerns, tracker/immobiliser options and insurance notes.
+4. Update scores only when there is evidence. Unknowns should stay `null`/`TBD` rather than being guessed.
+5. Add a change-log entry explaining what moved and why.
+
+## Publishing
+
+The dashboard is designed to work as a GitHub Pages static site from the `/docs` folder.
+
+Keep the repo private until the data and notes are clean enough to expose publicly. If publishing later, review for personal lease costs, notes about theft/security, and anything that should remain private.
+
+## Accuracy rule
+
+Prefer a blank, `null`, `TBD` or `unknown` value over fake precision. The dashboard should make uncertainty visible rather than hide it.
