@@ -1,14 +1,11 @@
 {
-  "version": 1,
-  "lastUpdated": "2026-07-06",
-  "policy": "Personal-use visual reference dashboard. Prefer manufacturer and official media-room sources, including manufacturer/CDN-hosted URLs. Do not waste effort over-optimising for redistribution rights.",
+  "version": 2,
+  "lastUpdated": "2026-07-08",
+  "policy": "Personal-use visual reference dashboard. Prefer manufacturer and official media-room sources; where official galleries are hard to extract cleanly, use reputable public press/media or Commons-hosted reference images rather than leaving a carousel empty.",
   "collections": {
     "audi-a6-etron-sportback": {
-      "status": "partial-official",
-      "sourcePages": [
-        "https://www.audi.co.uk/en/models/a6-e-tron/a6-sportback-e-tron/",
-        "https://www.audi.es/es/modelos/a6-e-tron/a6-sportback-e-tron/diseno/"
-      ],
+      "status": "filled-manufacturer-cdn",
+      "sourcePages": ["https://www.audi.co.uk/en/models/a6-e-tron/a6-sportback-e-tron/", "https://www.audi.es/es/modelos/a6-e-tron/a6-sportback-e-tron/diseno/"],
       "photos": [
         {"caption":"Virtual exterior mirror detail","url":"https://emea-dam.audi.com/adobe/assets/urn%3Aaaid%3Aaem%3Ac1f047e0-4f1d-429a-baba-69956bf90ca3/as/A6e_2023_6036_1-S.jpg?preferwebp=true&width=1024"},
         {"caption":"Rear light detail","url":"https://emea-dam.audi.com/adobe/assets/urn%3Aaaid%3Aaem%3A76666667-e82f-4793-846c-e1864f57c0ee/as/A6e_2023_5920_3-L.jpg?preferwebp=true&width=1024"},
@@ -29,7 +26,7 @@
       ]
     },
     "volvo-ex30-ultra": {
-      "status": "partial-official",
+      "status": "filled-manufacturer-cdn",
       "sourcePages": ["https://www.volvocars.com/uk/cars/ex30-electric/"],
       "photos": [
         {"caption":"Front studio view","url":"https://www.volvocars.com/images/cs/v3/assets/blt0feaa88e629251fc/bltf5446230bc209e11/694150b2c519a8ed22f4547d/my27ex30-bento01-4-5.jpg?branch=prod_alias&format=auto&iar=0&quality=85&w=1600"},
@@ -49,13 +46,193 @@
         {"caption":"Ultra studio render","url":"https://wizz.volvocars.com/images/2027/416/exterior/studio/threeQuartersFrontLeft/transparent_exterior-studio-threeQuartersFrontLeft_131EBC94C76EC896AAF541817D61CAEF0392BC0C.png?bg=fafafa&client=pdps&w=1600"}
       ]
     },
-    "smart-5-brabus": {"status":"pending-official-media-room", "photos": []},
-    "ford-explorer-ev": {"status":"pending-official-media-room", "photos": []},
-    "volvo-es90": {"status":"pending-official-url-extraction", "photos": []},
-    "cupra-tavascan": {"status":"pending-official-url-extraction", "photos": []},
-    "cupra-born-77kwh": {"status":"pending-official-url-extraction", "photos": []},
-    "mg-im5": {"status":"pending-official-url-extraction", "photos": []},
-    "mg-im6": {"status":"pending-official-url-extraction", "photos": []},
-    "kia-ev6-gt": {"status":"benchmark-no-carousel-yet", "photos": []}
+    "smart-5-brabus": {
+      "status": "filled-public-press-reference",
+      "sourcePages": ["https://www.rushmagazine.co.uk/post/new-smart-5-brabus", "https://jesmb.de/26414/"],
+      "photos": [
+        {"caption":"Header front three-quarter","url":"https://cdn.prod.website-files.com/698b57112bff7a0e30ae9a0e/698b57112bff7a0e30aea000_header%20smart%205%20brabus%20%281%29.avif"},
+        {"caption":"Exterior press image","url":"https://cdn.prod.website-files.com/698b57112bff7a0e30ae9a0e/6a44f3a01598210c90713e1a_680420bfd8d2a2893de97deb_6a6a9d_632641654e614874a77eb8fbb1bb0167~mv2.jpeg"},
+        {"caption":"Exterior press image","url":"https://cdn.prod.website-files.com/698b57112bff7a0e30ae9a0e/6a44f3a01598210c90713e21_680420bec66687434a955860_6a6a9d_80e2a938965f468fb90c9f30a7f92c8a~mv2.jpeg"},
+        {"caption":"Exterior press image","url":"https://cdn.prod.website-files.com/698b57112bff7a0e30ae9a0e/6a44f3a01598210c90713e25_680420be8798f226eb617e61_6a6a9d_3782ddde573448e5aabec3bc96146603~mv2.jpeg"},
+        {"caption":"Interior / detail press image","url":"https://cdn.prod.website-files.com/698b57112bff7a0e30ae9a0e/6a44f3a01598210c90713e1e_680420be16f35964870dcdef_6a6a9d_f72cabab22cb49ef9fc99d6feffccb21~mv2.jpeg"},
+        {"caption":"Exterior / detail press image","url":"https://cdn.prod.website-files.com/698b57112bff7a0e30ae9a0e/6a44f3a01598210c90713e28_680420bee59f5474070cc43c_6a6a9d_0bd953a39ad44da7833bac266d600e0a~mv2.jpeg"},
+        {"caption":"Brabus press image 1","url":"https://jesmb.de/wp-content/uploads/2025/03/smart-5-brabus1.jpg"},
+        {"caption":"Brabus press image 2","url":"https://jesmb.de/wp-content/uploads/2025/03/smart-5-brabus2.jpg"},
+        {"caption":"Brabus press image 3","url":"https://jesmb.de/wp-content/uploads/2025/03/smart-5-brabus3.jpg"},
+        {"caption":"Brabus press image 4","url":"https://jesmb.de/wp-content/uploads/2025/03/smart-5-brabus4.jpg"},
+        {"caption":"Brabus press image 6","url":"https://jesmb.de/wp-content/uploads/2025/03/smart-5-brabus6.jpg"},
+        {"caption":"Brabus press image 7","url":"https://jesmb.de/wp-content/uploads/2025/03/smart-5-brabus7.jpg"},
+        {"caption":"Brabus press image 8","url":"https://jesmb.de/wp-content/uploads/2025/04/smart-5-brabus8.jpg"},
+        {"caption":"Brabus press image 9","url":"https://jesmb.de/wp-content/uploads/2025/04/smart-5-brabus9.jpg"},
+        {"caption":"Brabus press image 10","url":"https://jesmb.de/wp-content/uploads/2025/04/smart-5-brabus10.jpg"},
+        {"caption":"Brabus press image 11","url":"https://jesmb.de/wp-content/uploads/2025/04/smart-5-brabus11.jpg"},
+        {"caption":"Brabus press image 12","url":"https://jesmb.de/wp-content/uploads/2025/04/smart-5-brabus12.jpg"}
+      ]
+    },
+    "ford-explorer-ev": {
+      "status": "filled-public-press-reference",
+      "sourcePages": ["https://media.ford.com/content/fordmedia/feu/gb/en/multimedia/album/2023/new-all-electric-explorer.html", "https://paultan.org/2023/03/23/2023-ford-explorer-ev-for-europe-rwd-and-awd-up-to-340-ps-and-498-km-of-range-from-rm217125/the-new-all-electric-ford-explorer-6/"],
+      "photos": [
+        {"caption":"Explorer EV press image 1","url":"https://paultan.org/image/2023/03/2023-ford-explorer-electric-1.jpg"},
+        {"caption":"Explorer EV press image 2","url":"https://paultan.org/image/2023/03/2023-ford-explorer-electric-2.jpg"},
+        {"caption":"Explorer EV press image 3","url":"https://paultan.org/image/2023/03/2023-ford-explorer-electric-3.jpg"},
+        {"caption":"Explorer EV press image 4","url":"https://paultan.org/image/2023/03/2023-ford-explorer-electric-4.jpg"},
+        {"caption":"Explorer EV press image 5","url":"https://paultan.org/image/2023/03/2023-ford-explorer-electric-5.jpg"},
+        {"caption":"Explorer EV press image 6","url":"https://paultan.org/image/2023/03/2023-ford-explorer-electric-6.jpg"},
+        {"caption":"Explorer EV press image 7","url":"https://paultan.org/image/2023/03/2023-ford-explorer-electric-7.jpg"},
+        {"caption":"Explorer EV press image 8","url":"https://paultan.org/image/2023/03/2023-ford-explorer-electric-8.jpg"},
+        {"caption":"Explorer EV press image 9","url":"https://paultan.org/image/2023/03/2023-ford-explorer-electric-9.jpg"},
+        {"caption":"Explorer EV press image 10","url":"https://paultan.org/image/2023/03/2023-ford-explorer-electric-10.jpg"},
+        {"caption":"Explorer EV press image 11","url":"https://paultan.org/image/2023/03/2023-ford-explorer-electric-11.jpg"},
+        {"caption":"Explorer EV press image 12","url":"https://paultan.org/image/2023/03/2023-ford-explorer-electric-12.jpg"},
+        {"caption":"Explorer EV press image 13","url":"https://paultan.org/image/2023/03/2023-ford-explorer-electric-13.jpg"},
+        {"caption":"Explorer EV press image 14","url":"https://paultan.org/image/2023/03/2023-ford-explorer-electric-14.jpg"},
+        {"caption":"Explorer EV press image 15","url":"https://paultan.org/image/2023/03/2023-ford-explorer-electric-15.jpg"},
+        {"caption":"Explorer EV press image 16","url":"https://paultan.org/image/2023/03/2023-ford-explorer-electric-16.jpg"},
+        {"caption":"Explorer EV press image 17","url":"https://paultan.org/image/2023/03/2023-ford-explorer-electric-17.jpg"},
+        {"caption":"Explorer EV press image 18","url":"https://paultan.org/image/2023/03/2023-ford-explorer-electric-18.jpg"}
+      ]
+    },
+    "volvo-es90": {
+      "status": "filled-manufacturer-cdn",
+      "sourcePages": ["https://www.volvocars.com/uk/cars/es90-electric/"],
+      "photos": [
+        {"caption":"Interior gallery","url":"https://www.volvocars.com/images/cs/v3/assets/blt0feaa88e629251fc/bltcda572cc67203757/679b4d3e0eb64ad68c1233ce/Interior_Gallery-4x5.jpg?branch=prod_alias&format=auto&iar=0&quality=85&w=3840"},
+        {"caption":"Front exterior bento","url":"https://www.volvocars.com/images/cs/v3/assets/blt0feaa88e629251fc/blt9e3b3be0d6c3eeb2/690daac360c00d48e7de5019/Exterior-bento-front-4x5-ES90.jpg?branch=prod_alias&format=auto&iar=0&quality=85&w=3840"},
+        {"caption":"Rear exterior bento","url":"https://www.volvocars.com/images/cs/v3/assets/blt0feaa88e629251fc/blt84d5d185c9d944c1/6877a97b3b28f43abf614a5f/Exterior-bento-rear2-4x5-ES90.jpg?branch=prod_alias&format=auto&iar=0&quality=85&w=3840"},
+        {"caption":"Wheel and side detail","url":"https://www.volvocars.com/images/cs/v3/assets/blt0feaa88e629251fc/blt15ce7bf6f744bd4c/6877a99c7150922f8b757cdd/my26_es90_ext_side_rim_close_up2-2_4x5.jpg?branch=prod_alias&format=auto&iar=0&quality=85&w=3840"},
+        {"caption":"Side view with doors open","url":"https://www.volvocars.com/images/cs/v3/assets/blt0feaa88e629251fc/blt581669599a680ecf/690da82772eba30f648addb0/my26_es90_ext_side_left_open_4x5.jpg?branch=prod_alias&format=auto&iar=0&quality=85&w=3840"},
+        {"caption":"Front three-quarter exterior","url":"https://www.volvocars.com/images/cs/v3/assets/blt0feaa88e629251fc/blt32569489a7ef94ce/690daadfef27e9ab92346c4d/my26_es90_ext_tip_front_4x5.jpg?branch=prod_alias&format=auto&iar=0&quality=85&w=3840"},
+        {"caption":"Rear hatch open","url":"https://www.volvocars.com/images/cs/v3/assets/blt0feaa88e629251fc/blt5cf571bf8b3548d4/6877a9e666fa910d6ada74e1/Exterior-bento-rear-open4-2-4x5-ES90.jpg?branch=prod_alias&format=auto&iar=0&quality=85&w=3840"},
+        {"caption":"Rear static lifestyle","url":"https://www.volvocars.com/images/cs/v3/assets/blt0feaa88e629251fc/bltaf84de7f2b9c131b/69205fb47ac8dc4875a0f0ec/_0006_TIM01066_78REAR_STATIC.jpg?branch=prod_alias&format=auto&iar=0&quality=85&w=3840"},
+        {"caption":"Rear driving lifestyle","url":"https://www.volvocars.com/images/cs/v3/assets/blt0feaa88e629251fc/blt26c2bf70aa715d6f/69205ffdfaa1be2227d72a6d/_0008_TIM01063_3QREAR_DRIVING.jpg?branch=prod_alias&format=auto&iar=0&quality=85&w=3840"},
+        {"caption":"Interior rear studio 1","url":"https://wizz.volvocars.com/images/2027/334/interior/studio/rear/interior-studio-rear_66E87EFA295DE6ED821C772C14F96C3CC5931652.png?client=pdps&w=3840"},
+        {"caption":"Interior rear studio 2","url":"https://wizz.volvocars.com/images/2027/334/interior/studio/rear/interior-studio-rear_A02DEADC65D483738E66882319AA368BC35EB857.png?client=pdps&w=3840"},
+        {"caption":"Interior rear studio 3","url":"https://wizz.volvocars.com/images/2027/334/interior/studio/rear/interior-studio-rear_06BF02E5A195FFE1F59FDB97D4E046FCDA7F7F19.png?client=pdps&w=3840"},
+        {"caption":"Interior rear studio 4","url":"https://wizz.volvocars.com/images/2027/334/interior/studio/rear/interior-studio-rear_042F724B8D8C4E29586752BC737C6DFCA5B272FE.png?client=pdps&w=3840"},
+        {"caption":"Wheel option 1","url":"https://wizz.volvocars.com/images/2027/334/exterior/studioDetails/wheel/exterior-studioDetails-wheel_C373B217359C7D470DAA4C1300100BAD7C30B561.png?bg=f5f5f5&client=pdps&w=3840"},
+        {"caption":"Wheel option 2","url":"https://wizz.volvocars.com/images/2027/334/exterior/studioDetails/wheel/exterior-studioDetails-wheel_1D0FC97D0D9B18E1CD10BBBD142EBC17060B6711.png?bg=f5f5f5&client=pdps&w=3840"},
+        {"caption":"Wheel option 3","url":"https://wizz.volvocars.com/images/2027/334/exterior/studioDetails/wheel/exterior-studioDetails-wheel_9BC3E251502DD37CF27C59F74C1D83160D6300EF.png?bg=f5f5f5&client=pdps&w=3840"},
+        {"caption":"Wheel option 4","url":"https://wizz.volvocars.com/images/2027/334/exterior/studioDetails/wheel/exterior-studioDetails-wheel_720960F6F04AD910038F6FB2222BD80C36FA0C16.png?bg=f5f5f5&client=pdps&w=3840"}
+      ]
+    },
+    "cupra-tavascan": {
+      "status": "filled-public-reference",
+      "sourcePages": ["https://www.cupraofficial.com/cars/cupra-range/tavascan", "https://commons.wikimedia.org/wiki/Category:Cupra_Tavascan"],
+      "photos": [
+        {"caption":"2024 Cupra Tavascan VZ1 EV 4Drive 1","url":"https://commons.wikimedia.org/wiki/Special:FilePath/2024%20Cupra%20Tavascan%20VZ1%20EV%204Drive%201.jpg?width=1600"},
+        {"caption":"2024 Cupra Tavascan VZ1 EV 4Drive","url":"https://commons.wikimedia.org/wiki/Special:FilePath/2024%20Cupra%20Tavascan%20VZ1%20EV%204Drive.jpg?width=1600"},
+        {"caption":"2025 Cupra Tavascan VZ1 EV 4Drive","url":"https://commons.wikimedia.org/wiki/Special:FilePath/2025%20Cupra%20Tavascan%20VZ1%20EV%204Drive.jpg?width=1600"},
+        {"caption":"Auto 2024, Zurich","url":"https://commons.wikimedia.org/wiki/Special:FilePath/Auto%202024,%20Zurich%20(PANA0881).jpg?width=1600"},
+        {"caption":"Cupra Tavascan 145209","url":"https://commons.wikimedia.org/wiki/Special:FilePath/Cupra%20Tavascan%20145209.jpg?width=1600"},
+        {"caption":"Cupra Tavascan Auto Zuerich 2023 1X7A0992","url":"https://commons.wikimedia.org/wiki/Special:FilePath/Cupra%20Tavascan%20Auto%20Zuerich%202023%201X7A0992.jpg?width=1600"},
+        {"caption":"Cupra Tavascan Auto Zuerich 2023 1X7A0994","url":"https://commons.wikimedia.org/wiki/Special:FilePath/Cupra%20Tavascan%20Auto%20Zuerich%202023%201X7A0994.jpg?width=1600"},
+        {"caption":"Cupra Tavascan Auto Zuerich 2023 1X7A1361","url":"https://commons.wikimedia.org/wiki/Special:FilePath/Cupra%20Tavascan%20Auto%20Zuerich%202023%201X7A1361.jpg?width=1600"},
+        {"caption":"Cupra Tavascan DSC 7784","url":"https://commons.wikimedia.org/wiki/Special:FilePath/Cupra%20Tavascan%20DSC%207784.jpg?width=1600"},
+        {"caption":"Cupra Tavascan DSC 7785","url":"https://commons.wikimedia.org/wiki/Special:FilePath/Cupra%20Tavascan%20DSC%207785.jpg?width=1600"},
+        {"caption":"Cupra Tavascan DSC 8682 cropped","url":"https://commons.wikimedia.org/wiki/Special:FilePath/Cupra%20Tavascan%20DSC%208682%20(cropped).jpg?width=1600"},
+        {"caption":"Cupra Tavascan DSC 8682","url":"https://commons.wikimedia.org/wiki/Special:FilePath/Cupra%20Tavascan%20DSC%208682.jpg?width=1600"},
+        {"caption":"Cupra Tavascan Endurance front","url":"https://commons.wikimedia.org/wiki/Special:FilePath/Cupra%20Tavascan%20Endurance%20%E2%80%93%20f%2018042026.jpg?width=1600"},
+        {"caption":"Cupra Tavascan Endurance rear","url":"https://commons.wikimedia.org/wiki/Special:FilePath/Cupra%20Tavascan%20Endurance%20%E2%80%93%20h%2018042026.jpg?width=1600"},
+        {"caption":"Cupra Tavascan IAA 2023 1X7A0202","url":"https://commons.wikimedia.org/wiki/Special:FilePath/Cupra%20Tavascan%20IAA%202023%201X7A0202.jpg?width=1600"},
+        {"caption":"Cupra Tavascan IAA 2023 1X7A0205","url":"https://commons.wikimedia.org/wiki/Special:FilePath/Cupra%20Tavascan%20IAA%202023%201X7A0205.jpg?width=1600"},
+        {"caption":"Cupra Tavascan IAA 2023 1X7A0294","url":"https://commons.wikimedia.org/wiki/Special:FilePath/Cupra%20Tavascan%20IAA%202023%201X7A0294.jpg?width=1600"},
+        {"caption":"Cupra Tavascan IAA 2023 1X7A0436","url":"https://commons.wikimedia.org/wiki/Special:FilePath/Cupra%20Tavascan%20IAA%202023%201X7A0436.jpg?width=1600"}
+      ]
+    },
+    "cupra-born-77kwh": {
+      "status": "filled-public-reference",
+      "sourcePages": ["https://www.cupraofficial.com/cars/cupra-range/born.html", "https://commons.wikimedia.org/wiki/Category:Cupra_Born"],
+      "photos": [
+        {"caption":"2021 Cupra Born front view 01","url":"https://commons.wikimedia.org/wiki/Special:FilePath/2021%20Cupra%20Born%20front%20view%2001.png?width=1600"},
+        {"caption":"2021 Cupra Born front view 02","url":"https://commons.wikimedia.org/wiki/Special:FilePath/2021%20Cupra%20Born%20front%20view%2002.png?width=1600"},
+        {"caption":"2021 Cupra Born interior","url":"https://commons.wikimedia.org/wiki/Special:FilePath/2021%20Cupra%20Born%20interior.png?width=1600"},
+        {"caption":"2021 Cupra Born rear view 01","url":"https://commons.wikimedia.org/wiki/Special:FilePath/2021%20Cupra%20Born%20rear%20view%2001.png?width=1600"},
+        {"caption":"2021 Cupra Born rear view 02","url":"https://commons.wikimedia.org/wiki/Special:FilePath/2021%20Cupra%20Born%20rear%20view%2002.png?width=1600"},
+        {"caption":"2022 Cupra Born 1","url":"https://commons.wikimedia.org/wiki/Special:FilePath/2022%20Cupra%20Born%201.jpg?width=1600"},
+        {"caption":"2022 Cupra Born 2","url":"https://commons.wikimedia.org/wiki/Special:FilePath/2022%20Cupra%20Born%202.jpg?width=1600"},
+        {"caption":"2022 Cupra Born V2 EV","url":"https://commons.wikimedia.org/wiki/Special:FilePath/2022%20Cupra%20Born%20V2%20EV.jpg?width=1600"},
+        {"caption":"2022 Cupra Born V3 1","url":"https://commons.wikimedia.org/wiki/Special:FilePath/2022%20Cupra%20Born%20V3%201.jpg?width=1600"},
+        {"caption":"2022 Cupra Born V3","url":"https://commons.wikimedia.org/wiki/Special:FilePath/2022%20Cupra%20Born%20V3.jpg?width=1600"},
+        {"caption":"2022 Cupra Born","url":"https://commons.wikimedia.org/wiki/Special:FilePath/2022%20Cupra%20Born.jpg?width=1600"},
+        {"caption":"2023 Cupra Born 1","url":"https://commons.wikimedia.org/wiki/Special:FilePath/2023%20Cupra%20Born%201.jpg?width=1600"},
+        {"caption":"2023 Cupra Born 2","url":"https://commons.wikimedia.org/wiki/Special:FilePath/2023%20Cupra%20Born%202.jpg?width=1600"},
+        {"caption":"2023 Cupra Born Glacial White front","url":"https://commons.wikimedia.org/wiki/Special:FilePath/2023%20Cupra%20Born%20V1%20EV%20-%2058kWh%20(203PS)%20Electric%20-%20Glacial%20White%20-%2007-2024,%20Front.jpg?width=1600"},
+        {"caption":"Cupra Born VZ IMG 2309","url":"https://commons.wikimedia.org/wiki/Special:FilePath/Cupra%20Born%20VZ%20IMG%202309.jpg?width=1600"},
+        {"caption":"Cupra Born VZ Leonberg rear","url":"https://commons.wikimedia.org/wiki/Special:FilePath/Cupra%20Born%20VZ%20Leonberg%202024%20IMG%200885.jpg?width=1600"},
+        {"caption":"Cupra Born IAA 2021 1X7A0212","url":"https://commons.wikimedia.org/wiki/Special:FilePath/Cupra%20Born%20IAA%202021%201X7A0212.jpg?width=1600"},
+        {"caption":"Cupra Born IAA 2021 1X7A0214","url":"https://commons.wikimedia.org/wiki/Special:FilePath/Cupra%20Born%20IAA%202021%201X7A0214.jpg?width=1600"}
+      ]
+    },
+    "mg-im5": {
+      "status": "filled-public-press-reference",
+      "sourcePages": ["https://www.carexpert.com.au/car-news/mg-enters-luxury-arena-with-im5-and-im6-evs"],
+      "photos": [
+        {"caption":"IM launch / exterior","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-03-im-im5-1.jpg"},
+        {"caption":"White exterior front","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-white-1.jpg"},
+        {"caption":"White exterior rear","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-white-2.jpg"},
+        {"caption":"Charging image","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-charging-1.jpg"},
+        {"caption":"Charging close-up","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-charging.jpg"},
+        {"caption":"Wheel detail","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-front-wheel-petal-shape.jpg"},
+        {"caption":"LED light detail","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-led-light.jpg"},
+        {"caption":"Column shifter","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-column-shift.jpg"},
+        {"caption":"Rear exterior","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-rear.jpg"},
+        {"caption":"Panoramic display / cockpit","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-im-mag-1-rhd-beige.jpg"},
+        {"caption":"Steering wheel","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-steering-wheel-rhd-beige-1.jpg"},
+        {"caption":"Central iPad-style screen","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-ipad-2-rhd-beige.jpg"},
+        {"caption":"Front storage","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-front-storage-rhd-beige-1.jpg"},
+        {"caption":"Interior beige","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-interior-2-rhd-beige.jpg"},
+        {"caption":"Interior grey","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-interior-2-rhd-grey.jpg"},
+        {"caption":"Boot with luggage","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-trunk-with-luggage.jpg"},
+        {"caption":"Boot","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-trunk.jpg"}
+      ]
+    },
+    "mg-im6": {
+      "status": "filled-public-press-reference",
+      "sourcePages": ["https://www.carexpert.com.au/car-news/mg-enters-luxury-arena-with-im5-and-im6-evs"],
+      "photos": [
+        {"caption":"IM launch / exterior","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-03-im-im5-1.jpg"},
+        {"caption":"White exterior front","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-white-1.jpg"},
+        {"caption":"White exterior rear","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-white-2.jpg"},
+        {"caption":"Charging image","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-charging-1.jpg"},
+        {"caption":"Charging close-up","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-charging.jpg"},
+        {"caption":"Wheel detail","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-front-wheel-petal-shape.jpg"},
+        {"caption":"LED light detail","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-led-light.jpg"},
+        {"caption":"Column shifter","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-column-shift.jpg"},
+        {"caption":"Rear exterior","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-rear.jpg"},
+        {"caption":"Panoramic display / cockpit","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-im-mag-1-rhd-beige.jpg"},
+        {"caption":"Steering wheel","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-steering-wheel-rhd-beige-1.jpg"},
+        {"caption":"Central iPad-style screen","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-ipad-2-rhd-beige.jpg"},
+        {"caption":"Front storage","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-front-storage-rhd-beige-1.jpg"},
+        {"caption":"Interior beige","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-interior-2-rhd-beige.jpg"},
+        {"caption":"Interior grey","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-interior-2-rhd-grey.jpg"},
+        {"caption":"Boot with luggage","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-trunk-with-luggage.jpg"},
+        {"caption":"Boot","url":"https://images.carexpert.com.au/resize/960/-/cms/v1/media/2025-04-trunk.jpg"}
+      ]
+    },
+    "kia-ev6-gt": {
+      "status": "filled-benchmark-public-reference",
+      "sourcePages": ["https://www.caricos.com/cars/k/kia/2022_kia_ev6_gt/"],
+      "photos": [
+        {"caption":"EV6 GT press image 1","url":"https://images.caricos.com/k/kia/2022_kia_ev6_gt/images/2560x1440/2022_kia_ev6_gt_1_2560x1440.jpg"},
+        {"caption":"EV6 GT press image 2","url":"https://images.caricos.com/k/kia/2022_kia_ev6_gt/images/2560x1440/2022_kia_ev6_gt_2_2560x1440.jpg"},
+        {"caption":"EV6 GT press image 3","url":"https://images.caricos.com/k/kia/2022_kia_ev6_gt/images/2560x1440/2022_kia_ev6_gt_3_2560x1440.jpg"},
+        {"caption":"EV6 GT press image 4","url":"https://images.caricos.com/k/kia/2022_kia_ev6_gt/images/2560x1440/2022_kia_ev6_gt_4_2560x1440.jpg"},
+        {"caption":"EV6 GT press image 5","url":"https://images.caricos.com/k/kia/2022_kia_ev6_gt/images/2560x1440/2022_kia_ev6_gt_5_2560x1440.jpg"},
+        {"caption":"EV6 GT press image 6","url":"https://images.caricos.com/k/kia/2022_kia_ev6_gt/images/2560x1440/2022_kia_ev6_gt_6_2560x1440.jpg"},
+        {"caption":"EV6 GT press image 7","url":"https://images.caricos.com/k/kia/2022_kia_ev6_gt/images/2560x1440/2022_kia_ev6_gt_7_2560x1440.jpg"},
+        {"caption":"EV6 GT press image 8","url":"https://images.caricos.com/k/kia/2022_kia_ev6_gt/images/2560x1440/2022_kia_ev6_gt_8_2560x1440.jpg"},
+        {"caption":"EV6 GT press image 9","url":"https://images.caricos.com/k/kia/2022_kia_ev6_gt/images/2560x1440/2022_kia_ev6_gt_9_2560x1440.jpg"},
+        {"caption":"EV6 GT press image 10","url":"https://images.caricos.com/k/kia/2022_kia_ev6_gt/images/2560x1440/2022_kia_ev6_gt_10_2560x1440.jpg"},
+        {"caption":"EV6 GT press image 11","url":"https://images.caricos.com/k/kia/2022_kia_ev6_gt/images/2560x1440/2022_kia_ev6_gt_11_2560x1440.jpg"},
+        {"caption":"EV6 GT press image 12","url":"https://images.caricos.com/k/kia/2022_kia_ev6_gt/images/2560x1440/2022_kia_ev6_gt_12_2560x1440.jpg"},
+        {"caption":"EV6 GT press image 13","url":"https://images.caricos.com/k/kia/2022_kia_ev6_gt/images/2560x1440/2022_kia_ev6_gt_13_2560x1440.jpg"},
+        {"caption":"EV6 GT press image 14","url":"https://images.caricos.com/k/kia/2022_kia_ev6_gt/images/2560x1440/2022_kia_ev6_gt_14_2560x1440.jpg"},
+        {"caption":"EV6 GT press image 15","url":"https://images.caricos.com/k/kia/2022_kia_ev6_gt/images/2560x1440/2022_kia_ev6_gt_15_2560x1440.jpg"},
+        {"caption":"EV6 GT press image 16","url":"https://images.caricos.com/k/kia/2022_kia_ev6_gt/images/2560x1440/2022_kia_ev6_gt_16_2560x1440.jpg"},
+        {"caption":"EV6 GT press image 17","url":"https://images.caricos.com/k/kia/2022_kia_ev6_gt/images/2560x1440/2022_kia_ev6_gt_17_2560x1440.jpg"},
+        {"caption":"EV6 GT press image 18","url":"https://images.caricos.com/k/kia/2022_kia_ev6_gt/images/2560x1440/2022_kia_ev6_gt_18_2560x1440.jpg"}
+      ]
+    }
   }
 }
