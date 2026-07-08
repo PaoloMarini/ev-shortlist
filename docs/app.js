@@ -1,7 +1,8 @@
 const state = {
   vehicles: [],
   criteria: [],
-  changeLog: []
+  changeLog: [],
+  photoCollections: {}
 };
 
 const statusOrder = {
@@ -109,6 +110,44 @@ function renderCriteria() {
   });
 }
 
+function renderPhotos(vehicle, container) {
+  const collection = state.photoCollections[vehicle.id];
+  const photos = collection?.photos || [];
+
+  if (!photos.length) {
+    const pending = document.createElement("p");
+    pending.className = "photo-pending";
+    pending.textContent = collection?.status
+      ? `Official photo carousel pending: ${collection.status}.`
+      : "Official photo carousel pending.";
+    container.appendChild(pending);
+    return;
+  }
+
+  const wrapper = document.createElement("div");
+  wrapper.className = "photo-carousel";
+
+  const track = document.createElement("div");
+  track.className = "photo-track";
+
+  photos.forEach((photo, index) => {
+    const figure = document.createElement("figure");
+    figure.className = "photo-slide";
+    figure.innerHTML = `
+      <img src="${photo.url}" alt="${vehicle.make} ${vehicle.model}: ${photo.caption || `official photo ${index + 1}`}" loading="lazy" />
+      <figcaption>${index + 1}/${photos.length} · ${photo.caption || "Official manufacturer image"}</figcaption>
+    `;
+    track.appendChild(figure);
+  });
+
+  const source = document.createElement("p");
+  source.className = "photo-source";
+  source.textContent = `${photos.length} manufacturer-hosted images · ${collection.status || "official"}`;
+
+  wrapper.append(track, source);
+  container.appendChild(wrapper);
+}
+
 function renderVehicles() {
   const container = document.getElementById("vehicle-grid");
   const template = document.getElementById("vehicle-card-template");
@@ -148,6 +187,8 @@ function renderVehicles() {
     node.querySelector("h3").textContent = `${vehicle.make} ${vehicle.model}`;
     node.querySelector(".meta").textContent = `${vehicle.bodyType || "Unknown body"} · ${vehicle.origin || "origin TBD"} · ${vehicle.availabilityUk || "availability TBD"}`;
     node.querySelector(".score").textContent = score === null ? "—" : score.toFixed(1);
+
+    renderPhotos(vehicle, node.querySelector(".photo-section"));
 
     const factList = node.querySelector(".fact-list");
     const facts = vehicle.facts || {};
@@ -230,15 +271,17 @@ function renderChangeLog() {
 }
 
 async function init() {
-  const [vehiclesData, criteriaData, changeLogData] = await Promise.all([
+  const [vehiclesData, criteriaData, changeLogData, photosData] = await Promise.all([
     loadJson("data/vehicles.json"),
     loadJson("data/criteria.json"),
-    loadJson("data/change-log.json")
+    loadJson("data/change-log.json"),
+    loadJson("data/photos.json")
   ]);
 
   state.vehicles = vehiclesData.vehicles;
   state.criteria = criteriaData.criteria;
   state.changeLog = changeLogData.entries;
+  state.photoCollections = photosData.collections || {};
 
   document.getElementById("last-updated").textContent = vehiclesData.lastUpdated;
   const benchmark = state.vehicles.find((vehicle) => vehicle.id === vehiclesData.benchmark);
