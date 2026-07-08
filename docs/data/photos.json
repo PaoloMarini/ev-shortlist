@@ -1,7 +1,7 @@
 {
   "version": 1,
   "lastUpdated": "2026-07-06",
-  "policy": "Use manufacturer-hosted URLs only. Do not copy image files into the repo unless the manufacturer media terms clearly allow redistribution.",
+  "policy": "Personal-use visual reference dashboard. Prefer manufacturer and official media-room sources, including manufacturer/CDN-hosted URLs. Do not waste effort over-optimising for redistribution rights.",
   "collections": {
     "audi-a6-etron-sportback": {
       "status": "partial-official",
