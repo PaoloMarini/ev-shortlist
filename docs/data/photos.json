@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "lastUpdated": "2026-07-06",
+  "policy": "Use manufacturer-hosted URLs only. Do not copy image files into the repo unless the manufacturer media terms clearly allow redistribution.",
+  "collections": {
+    "audi-a6-etron-sportback": {
+      "status": "partial-official",
+      "sourcePages": [
+        "https://www.audi.co.uk/en/models/a6-e-tron/a6-sportback-e-tron/",
+        "https://www.audi.es/es/modelos/a6-e-tron/a6-sportback-e-tron/diseno/"
+      ],
+      "photos": [
+        {"caption":"Virtual exterior mirror detail","url":"https://emea-dam.audi.com/adobe/assets/urn%3Aaaid%3Aaem%3Ac1f047e0-4f1d-429a-baba-69956bf90ca3/as/A6e_2023_6036_1-S.jpg?preferwebp=true&width=1024"},
+        {"caption":"Rear light detail","url":"https://emea-dam.audi.com/adobe/assets/urn%3Aaaid%3Aaem%3A76666667-e82f-4793-846c-e1864f57c0ee/as/A6e_2023_5920_3-L.jpg?preferwebp=true&width=1024"},
+        {"caption":"Driver assistance visual","url":"https://emea-dam.audi.com/adobe/assets/urn%3Aaaid%3Aaem%3A7530cd25-03ac-423a-936e-efd96ccc9e5b/as/A6e_2023_5940_3-L.jpg?preferwebp=true&width=1024"},
+        {"caption":"Cockpit and panoramic display","url":"https://emea-dam.audi.com/adobe/assets/urn%3Aaaid%3Aaem%3A7c5f06d6-d22d-4f26-bc68-cdeb39845858/as/A6e_2023_5952_1_EN-S.jpg?preferwebp=true&width=1024"},
+        {"caption":"Bang & Olufsen head-rest speaker","url":"https://emea-dam.audi.com/adobe/assets/urn%3Aaaid%3Aaem%3Aef944047-0c2c-408a-80cd-785cfa4b2d7a/as/A6e_2023_5950-S-L.jpg?preferwebp=true&width=1024"},
+        {"caption":"Front studio view","url":"https://emea-dam.audi.com/adobe/assets/urn%3Aaaid%3Aaem%3Ab77b24df-fd01-4885-9471-4c92eb47bebd/as/A6e_2023_5915_2-L.jpg?width=1024"},
+        {"caption":"Charging socket detail","url":"https://emea-dam.audi.com/adobe/assets/urn%3Aaaid%3Aaem%3Aa58b163a-f05a-4fba-bf6b-e1fa25613f8e/as/A6e_2023_5927_1-L.jpg?width=1024"},
+        {"caption":"Front seats","url":"https://emea-dam.audi.com/adobe/assets/urn%3Aaaid%3Aaem%3Ad6497905-863b-4f1a-b418-1d0cfedeba81/as/A6e_2023_5947-L.jpg?width=1024"},
+        {"caption":"Side profile","url":"https://emea-dam.audi.com/adobe/assets/urn%3Aaaid%3Aaem%3A96c7f5fc-3b81-431c-913e-c41fc33f8077/as/A6e_2023_5913_3-L.jpg?auto=webp"},
+        {"caption":"On-road front three-quarter","url":"https://emea-dam.audi.com/adobe/assets/urn%3Aaaid%3Aaem%3Af4464254-685f-4493-9144-69f96cdbbdbf/as/Card-Container-1.jpg?width=1024"},
+        {"caption":"Hero stage image","url":"https://emea-dam.audi.com/adobe/assets/urn%3Aaaid%3Aaem%3A161a8f09-16a6-419f-8001-4e6030ea0d3c/as/New-Stage-D.jpg?width=1024"},
+        {"caption":"Lifestyle card image","url":"https://emea-dam.audi.com/adobe/assets/urn%3Aaaid%3Aaem%3Afb6f3ee8-c977-42ac-aaaa-d30535d2ca43/as/Card-Container.jpg?width=1024"},
+        {"caption":"Spanish Audi design hero","url":"https://emea-dam.audi.com/adobe/assets/urn%3Aaaid%3Aaem%3Abbd3022a-63d5-481e-ad26-20462b0ea408/as/A6e_2023_5913_3-S.jpg"},
+        {"caption":"Audi exclusive interior","url":"https://emea-dam.audi.com/adobe/assets/urn%3Aaaid%3Aaem%3Acd7ba27c-1611-4af9-af6d-21e4fc775bb1/as/A6e_ae_2023_5943_1_EN-L.jpg?auto=webp"},
+        {"caption":"Digital cockpit Spanish page","url":"https://emea-dam.audi.com/adobe/assets/urn%3Aaaid%3Aaem%3Ae928ade7-7457-4db6-8b13-41b560c2dcbd/as/A6e_2023_5952_1_EN-S.jpg?width=576"},
+        {"caption":"Audi sound-system detail Spanish page","url":"https://emea-dam.audi.com/adobe/assets/urn%3Aaaid%3Aaem%3A66deb2c5-cd39-4ed2-98df-1f55a7854bf0/as/A6e_2023_5950-S.jpg?width=576"}
+      ]
+    },
+    "volvo-ex30-ultra": {
+      "status": "partial-official",
+      "sourcePages": ["https://www.volvocars.com/uk/cars/ex30-electric/"],
+      "photos": [
+        {"caption":"Front studio view","url":"https://www.volvocars.com/images/cs/v3/assets/blt0feaa88e629251fc/bltf5446230bc209e11/694150b2c519a8ed22f4547d/my27ex30-bento01-4-5.jpg?branch=prod_alias&format=auto&iar=0&quality=85&w=1600"},
+        {"caption":"Rear studio view","url":"https://www.volvocars.com/images/cs/v3/assets/blt0feaa88e629251fc/blt405b9cae045066d1/694150b2c519a81924f45475/my27ex30-bento02-4-5.jpg?branch=prod_alias&format=auto&iar=0&quality=85&w=1600"},
+        {"caption":"Open doors studio side view","url":"https://www.volvocars.com/images/cs/v3/assets/blt0feaa88e629251fc/bltbe26bdb41a4b5f6f/694150b2a1438c8c02c2403d/my27ex30-bento04-4-5.jpg?branch=prod_alias&format=auto&iar=0&quality=85&w=1600"},
+        {"caption":"Interior and central screen","url":"https://www.volvocars.com/images/cs/v3/assets/blt0feaa88e629251fc/bltdd9e7f24b834c198/696a3364a1438c7a24c2e6d4/VOLVO_EX30_Still_5-4-5.jpg?branch=prod_alias&format=auto&iar=0&quality=85&w=1600"},
+        {"caption":"Panoramic roof top view","url":"https://www.volvocars.com/images/cs/v3/assets/blt0feaa88e629251fc/blt1a0d38f969dece38/694150b26cee2519f751b989/my27ex30-bento05-4-5.jpg?branch=prod_alias&format=auto&iar=0&quality=85&w=1600"},
+        {"caption":"Boot open rear view","url":"https://www.volvocars.com/images/cs/v3/assets/blt0feaa88e629251fc/bltce698f94be26e20e/694150c17928cbff729c459e/my27ex30-bento06-4-5.jpg?branch=prod_alias&format=auto&iar=0&quality=85&w=1600"},
+        {"caption":"Urban side profile","url":"https://www.volvocars.com/images/cs/v3/assets/blt0feaa88e629251fc/bltae5b16bfd5effe91/696a3386e27539765ca486c0/VOLVO_EX30_Still_7-4-5.jpg?branch=prod_alias&format=auto&iar=0&quality=85&w=1600"},
+        {"caption":"Cross Country side profile","url":"https://www.volvocars.com/images/cs/v3/assets/blt0feaa88e629251fc/blt53e6073f0ad76730/68da6a32268aaac859456b95/Spotlight-edition-carousel-1.jpg?branch=prod_alias&format=auto&iar=0&quality=85&w=1600"},
+        {"caption":"Black Edition side profile","url":"https://www.volvocars.com/images/cs/v3/assets/blt0feaa88e629251fc/blt0629cead686222cf/68da60789c3909be998dd871/Spotlight-edition-carousel-2.jpg?branch=prod_alias&format=auto&iar=0&quality=85&w=1600"},
+        {"caption":"Isolated seat detail","url":"https://www.volvocars.com/images/cs/v3/assets/blt0feaa88e629251fc/blt2cf986425bc48bf0/69450d046cee2526f651c7c0/my27_ex30_int_isolated_seat_side_16x9.jpg?branch=prod_alias&format=auto&iar=0&quality=85&w=1600"},
+        {"caption":"Open hood, doors and tailgate","url":"https://www.volvocars.com/images/cs/v3/assets/blt0feaa88e629251fc/blta586a4cdf4e01262/694150b2c519a8610ef45479/my27ex30-bento04-16-9.jpg?branch=prod_alias&format=auto&iar=0&quality=85&w=1600"},
+        {"caption":"Dashboard and touchscreen","url":"https://www.volvocars.com/images/cs/v3/assets/blt0feaa88e629251fc/blt4486560a1ee587a4/69428e136cee25abe551bdfd/my27ex30Interior-bento-01-16-9.jpg?branch=prod_alias&format=auto&iar=0&quality=85&w=1600"},
+        {"caption":"Core studio render","url":"https://wizz.volvocars.com/images/2027/416/exterior/studio/threeQuartersFrontLeft/transparent_exterior-studio-threeQuartersFrontLeft_C1D452726B7300F23214E3AF3166E00E5D8C91A3.png?bg=fafafa&client=pdps&w=1600"},
+        {"caption":"Plus studio render","url":"https://wizz.volvocars.com/images/2027/416/exterior/studio/threeQuartersFrontLeft/transparent_exterior-studio-threeQuartersFrontLeft_5A0DFFE6FB7F3B87C4B68640B038C8D6A8BD5AF3.png?bg=fafafa&client=pdps&w=1600"},
+        {"caption":"Ultra studio render","url":"https://wizz.volvocars.com/images/2027/416/exterior/studio/threeQuartersFrontLeft/transparent_exterior-studio-threeQuartersFrontLeft_131EBC94C76EC896AAF541817D61CAEF0392BC0C.png?bg=fafafa&client=pdps&w=1600"}
+      ]
+    },
+    "smart-5-brabus": {"status":"pending-official-media-room", "photos": []},
+    "ford-explorer-ev": {"status":"pending-official-media-room", "photos": []},
+    "volvo-es90": {"status":"pending-official-url-extraction", "photos": []},
+    "cupra-tavascan": {"status":"pending-official-url-extraction", "photos": []},
+    "cupra-born-77kwh": {"status":"pending-official-url-extraction", "photos": []},
+    "mg-im5": {"status":"pending-official-url-extraction", "photos": []},
+    "mg-im6": {"status":"pending-official-url-extraction", "photos": []},
+    "kia-ev6-gt": {"status":"benchmark-no-carousel-yet", "photos": []}
+  }
+}
