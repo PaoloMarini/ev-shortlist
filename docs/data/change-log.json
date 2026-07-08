@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "date": "2026-07-08",
+      "type": "visuals",
+      "summary": "Filled the vehicle photo carousels.",
+      "details": [
+        "Added 15+ images for every vehicle currently represented in the dashboard, including the EV6 GT benchmark.",
+        "Kept manufacturer/CDN images where easily available, and used reputable public press/media or Commons reference images where official galleries were difficult to extract cleanly.",
+        "Updated the photo policy to reflect personal-use visual-reference handling rather than redistribution-safe image packaging."
+      ]
+    },
+    {
       "date": "2026-07-06",
       "type": "research",
       "summary": "First evidence-backed market refresh and dashboard scoring pass.",
