@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "date": "2026-07-10",
+      "type": "research",
+      "summary": "Refreshed UK-market evidence across every tracked vehicle and enforced budget, safety and evidence thresholds.",
+      "details": [
+        "Moved Volvo EX30 from watchlist to research after UK battery-overheat campaign evidence and reported electrical/display failures compounded its already poor control-layout fit.",
+        "Moved Audi A6 Sportback e-tron from shortlist to watchlist because its £63k-plus starting price breaches the stated £55k purchase ceiling; it can return only if a real salary-sacrifice quote is compelling.",
+        "Moved Volvo ES90 from watchlist to research because it is well over budget and no confirmed Euro NCAP result was retained in the evidence reviewed.",
+        "Kept Smart #5 Brabus on the shortlist and strengthened its charging/range/quality evidence: about 336 miles WLTP, up to 400 kW DC, five-star Euro NCAP and positive comfort/material-quality road tests.",
+        "Confirmed clearer UK availability and pricing for MG IM5 and IM6. IM6 has a five-star Euro NCAP result, but both remain research-only because software, phone integration, control ergonomics, theft/security and support maturity are insufficiently proven.",
+        "Kept Ford Explorer, Cupra Tavascan and Cupra Born on the watchlist; all now carry explicit Euro NCAP and dealer/lease-readiness notes.",
+        "Kept Kia EV6 GT as benchmark only and Tesla excluded."
+      ]
+    },
+    {
       "date": "2026-07-08",
       "type": "visuals",
       "summary": "Filled the vehicle photo carousels.",
