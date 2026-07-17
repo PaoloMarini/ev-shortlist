@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "date": "2026-07-17",
+      "type": "research",
+      "summary": "Corrected pricing, safety and subscription evidence in the UK EV shortlist.",
+      "details": [
+        "No vehicle changed status this week; Smart #5 Brabus remains the only shortlist car.",
+        "Corrected Smart #5 Brabus to the current official UK figures of 335 miles WLTP and 646 hp, and replaced the generic subscription warning with Smart's published £84-per-year Premium Connectivity Package.",
+        "Corrected Cupra Tavascan VZ pricing: VZ1 is £54,930 and Sennheiser-equipped VZ2 is £59,830, materially weakening its value score and creating a direct budget-versus-audio conflict.",
+        "Removed the incorrect missing-Euro-NCAP flag from MG IM5. Its 2025 five-star result is now recorded, but it remains research-only because software, intrusive ADAS, menu-heavy controls, support maturity and theft/security evidence are still insufficient.",
+        "Strengthened the Volvo EX30 recall note using the official UK recall record: 10,577 affected vehicles may require a 70% charge limit until battery modules are inspected and replaced.",
+        "Raised Ford Explorer's value score slightly because Ford is actively advertising grant support and retail promotions, while retaining a trim-eligibility caveat for the desired Extended Range version.",
+        "Kept Kia EV6 GT as benchmark only and Tesla excluded."
+      ]
+    },
+    {
       "date": "2026-07-10",
       "type": "research",
       "summary": "Refreshed UK-market evidence across every tracked vehicle and enforced budget, safety and evidence thresholds.",
