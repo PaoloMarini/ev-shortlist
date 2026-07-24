@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/apply_refresh_2026_07_24.py'
+      - 'scripts/trigger_refresh_2026_07_24.txt'
   workflow_dispatch:
 
 permissions:
