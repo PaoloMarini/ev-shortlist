@@ -1,0 +1,26 @@
+name: Apply EV research refresh
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/apply_refresh_2026_07_24.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply-refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply researched updates
+        run: python scripts/apply_refresh_2026_07_24.py
+      - name: Commit refreshed dashboard data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/vehicles.json docs/data/change-log.json
+          git diff --cached --quiet || git commit -m "data: refresh UK EV evidence for 2026-07-24"
+          git push
